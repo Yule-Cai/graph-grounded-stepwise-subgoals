@@ -1,0 +1,87 @@
+{
+  "map_id": "primitive_hospital_constraint_demo",
+  "world": "external_worlds/aws-robomaker-hospital-world/worlds/hospital_primitives.world",
+  "frame_id": "map",
+  "units": "meters",
+  "regions": {
+    "central_corridor": {
+      "type": "navigable_region",
+      "shape": "rect",
+      "center": [0.0, 0.0],
+      "size": [8.0, 56.0],
+      "aliases": ["main hallway", "corridor", "走廊", "主走廊"]
+    },
+    "nurse_station": {
+      "type": "restricted_region",
+      "shape": "rect",
+      "center": [0.0, 3.2],
+      "size": [4.6, 2.2],
+      "default_min_distance": 2.2,
+      "aliases": ["nurse station", "reception", "护士站", "前台", "蓝色护士站"]
+    },
+    "north_lobby": {
+      "type": "caution_region",
+      "shape": "rect",
+      "center": [0.0, 24.5],
+      "size": [7.5, 8.0],
+      "aliases": ["north lobby", "lobby", "大厅", "北侧大厅"]
+    },
+    "west_patient_rooms": {
+      "type": "restricted_region",
+      "shape": "rect",
+      "center": [-11.1, -1.0],
+      "size": [5.6, 56.0],
+      "aliases": ["west ward", "patient rooms on the left", "patient room", "ward", "bedroom", "左侧病房", "病人区", "病房", "卧室", "睡房"]
+    },
+    "east_patient_rooms": {
+      "type": "restricted_region",
+      "shape": "rect",
+      "center": [11.1, -1.0],
+      "size": [5.6, 56.0],
+      "aliases": ["east ward", "patient rooms on the right", "patient room", "ward", "bedroom", "右侧病房", "病房", "卧室", "睡房"]
+    },
+    "operating_exam_area": {
+      "type": "restricted_region",
+      "shape": "rect",
+      "center": [0.0, -15.2],
+      "size": [5.6, 4.2],
+      "aliases": ["surgery room", "exam room", "x ray room", "检查室", "手术区"]
+    },
+    "red_no_entry_kitchen": {
+      "type": "restricted_region",
+      "shape": "rect",
+      "center": [-11.0, -26.0],
+      "size": [3.2, 2.4],
+      "aliases": ["kitchen", "red zone", "red area", "warning zone", "no entry zone", "厨房", "红色区域", "红色厨房区", "红色警戒区", "警戒区", "警区", "禁区", "禁入区"]
+    },
+    "green_goal_lobby": {
+      "type": "goal_region",
+      "shape": "rect",
+      "center": [0.0, 25.0],
+      "size": [3.6, 2.0],
+      "aliases": ["green goal", "goal", "lobby target", "绿色目标", "绿色区域", "目标区", "大厅目标"]
+    }
+  },
+  "objects": {
+    "wheelchair_patient": {
+      "type": "keep_distance_object",
+      "position": [-4.5, 5.0],
+      "default_min_distance": 1.2,
+      "aliases": ["wheelchair patient", "patient in wheelchair", "轮椅病人"]
+    },
+    "xray_machine": {
+      "type": "keep_distance_object",
+      "position": [0.0, -15.2],
+      "default_min_distance": 1.5,
+      "aliases": ["xray machine", "x-ray machine", "X光机"]
+    },
+    "blue_fragile_vase_zone": {
+      "type": "keep_distance_object",
+      "shape": "circle",
+      "position": [10.8, 3.2],
+      "radius": 0.9,
+      "default_min_distance": 1.0,
+      "aliases": ["fragile vase", "vase", "blue vase", "blue fragile zone", "古董花瓶", "花瓶", "蓝色花瓶", "蓝色区域", "易碎物"]
+    }
+  }
+}

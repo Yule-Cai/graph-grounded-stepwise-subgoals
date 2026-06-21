@@ -1,0 +1,43 @@
+# Stage World Config for Map 5
+
+# 1. 基础 GUI 设置
+include "turtlebot.inc"
+
+define block model
+(
+  size [0.5 0.5 0.5]
+  gui_nose 0
+)
+
+define top_view_window window
+(
+  size [ 600 600 ] # 窗口像素大小
+  scale 25.0       # 缩放比例
+  center [ 10.0 10.0 ] # 摄像机看哪里
+  rotate [ 0.000 0.000 ]
+  show_data 1
+)
+
+# 2. 加载窗口
+top_view_window
+(
+  name "Map 5 Simulation"
+)
+
+# 3. 加载地图 (从图片读取)
+model
+(
+  name "map5_environment"
+  bitmap "map5.png"  # 我们刚才生成的图片
+  size [ 20.0 20.0 1.0 ]
+  pose [ 10.0 10.0 0.0 0.0 ] # 地图中心点
+  color "gray90"
+)
+
+# 4. 放置机器人 (起点 0,0)
+turtlebot
+(
+  pose [ 0.0 0.0 0.0 0.0 ] 
+  name "turtlebot"
+  color "blue"
+)

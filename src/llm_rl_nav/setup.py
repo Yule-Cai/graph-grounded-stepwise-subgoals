@@ -1,0 +1,60 @@
+from glob import glob
+from setuptools import find_packages, setup
+
+
+package_name = "llm_rl_nav"
+
+setup(
+    name=package_name,
+    version="0.1.0",
+    packages=find_packages(exclude=["test"]),
+    data_files=[
+        ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
+        ("share/" + package_name, ["package.xml"]),
+        ("share/" + package_name + "/launch", glob("launch/*.launch.py")),
+        ("share/" + package_name + "/worlds", glob("worlds/*")),
+        ("share/" + package_name + "/maps", glob("maps/*")),
+        ("share/" + package_name + "/rviz", glob("rviz/*")),
+        ("share/" + package_name + "/config", glob("config/*.*")),
+        ("share/" + package_name + "/config/semantic_maps", glob("config/semantic_maps/*")),
+    ],
+    install_requires=["setuptools"],
+    zip_safe=True,
+    maintainer="anonymous",
+    maintainer_email="anonymous@example.com",
+    description="LLM-assisted and reinforcement-learning TurtleBot navigation demos for ROS 2.",
+    license="MIT",
+    extras_require={"test": ["pytest"]},
+    entry_points={
+        "console_scripts": [
+            "llm_commander = llm_rl_nav.nodes.llm_navigator_commander:main",
+            "llm_planner = llm_rl_nav.nodes.llm_planner:main",
+            "rl_navigator = llm_rl_nav.nodes.rl_navigator:main",
+            "train_ppo = llm_rl_nav.training.train_ppo:main",
+            "train_sac = llm_rl_nav.training.train_sac:main",
+            "train_hospital_ppo = llm_rl_nav.training.train_hospital_ppo:main",
+            "train_multimap_ppo = llm_rl_nav.training.train_multimap_ppo:main",
+            "train_multimap_baseline = llm_rl_nav.training.train_multimap_baseline:main",
+            "eval_hospital_ppo = llm_rl_nav.training.eval_hospital_ppo:main",
+            "eval_multimap_ppo = llm_rl_nav.training.eval_multimap_ppo:main",
+            "eval_llm_route_planning = llm_rl_nav.training.eval_llm_route_planning:main",
+            "eval_formal_rule_pipeline = llm_rl_nav.training.eval_formal_rule_pipeline:main",
+            "eval_lmstudio_formal_compilers = llm_rl_nav.training.eval_lmstudio_formal_compilers:main",
+            "eval_hf_formal_compilers = llm_rl_nav.training.eval_hf_formal_compilers:main",
+            "eval_hf_route_compilers = llm_rl_nav.training.eval_hf_route_compilers:main",
+            "eval_hf_route_navigation = llm_rl_nav.training.eval_hf_route_navigation:main",
+            "audit_multimap_geometry = llm_rl_nav.training.audit_multimap_geometry:main",
+            "eval_constraint_shield = llm_rl_nav.training.eval_constraint_shield:main",
+            "smoke_hospital_env = llm_rl_nav.training.smoke_hospital_env:main",
+            "smoke_multimap_env = llm_rl_nav.training.smoke_multimap_env:main",
+            "test_trained_model = llm_rl_nav.training.test_trained_model:main",
+            "grid_to_world = llm_rl_nav.tools.grid_to_world:main",
+            "list_external_worlds = llm_rl_nav.tools.external_worlds:main",
+            "generate_semantic_3d_worlds = llm_rl_nav.envs.semantic_world_source:main",
+            "move_obstacles = llm_rl_nav.tools.move_obstacles:main",
+            "spawn_maze_paper = llm_rl_nav.tools.spawn_maze_paper:main",
+            "constraint_demo = llm_rl_nav.tools.constraint_demo:main",
+            "formal_constraint_demo = llm_rl_nav.tools.formal_constraint_demo:main",
+        ],
+    },
+)

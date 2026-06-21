@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name='wall_block_0'>
+      <pose>2.0 7.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_1'>
+      <pose>3.0 7.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_2'>
+      <pose>4.0 7.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_3'>
+      <pose>5.0 7.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_4'>
+      <pose>6.0 7.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_5'>
+      <pose>2.0 6.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_6'>
+      <pose>6.0 6.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_7'>
+      <pose>2.0 5.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_8'>
+      <pose>6.0 5.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_9'>
+      <pose>2.0 4.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_10'>
+      <pose>6.0 4.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_11'>
+      <pose>2.0 3.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_12'>
+      <pose>3.0 3.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_13'>
+      <pose>5.0 3.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+    <model name='wall_block_14'>
+      <pose>6.0 3.0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 1.0 1.0</size></box></geometry>
+          <material><ambient>0.4 0.2 0.6 1</ambient></material> </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

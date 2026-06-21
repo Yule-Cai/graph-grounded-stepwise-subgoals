@@ -1,0 +1,201 @@
+{
+  "map_id": "reference_family_flat",
+  "world": "generated_worlds/semantic_3d/reference_family_flat.world",
+  "frame_id": "map",
+  "units": "meters",
+  "regions": {
+    "kitchen": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-20.25, 13.75],
+      "size": [11.5, 12.5],
+      "aliases": ["kitchen", "cooking area", "厨房", "烹饪区"]
+    },
+    "bathroom": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-20.25, 2.15],
+      "size": [11.5, 10.7],
+      "aliases": ["bathroom", "washroom", "toilet room", "卫生间", "浴室", "厕所"]
+    },
+    "guest_bedroom": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-20.25, -11.6],
+      "size": [11.5, 16.8],
+      "aliases": ["guest bedroom", "guest room", "客卧", "客房", "左侧卧室", "卧室"]
+    },
+    "dining_room": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-8.55, 13.75],
+      "size": [11.9, 12.5],
+      "aliases": ["dining room", "dining area", "餐厅", "饭厅"]
+    },
+    "study": {
+      "type": "room",
+      "shape": "rect",
+      "center": [4.1, 13.75],
+      "size": [13.4, 12.5],
+      "aliases": ["study", "office", "reading room", "书房", "工作间"]
+    },
+    "secondary_bedroom": {
+      "type": "room",
+      "shape": "rect",
+      "center": [18.4, 13.75],
+      "size": [15.2, 12.5],
+      "aliases": ["secondary bedroom", "second bedroom", "kids bedroom", "次卧", "儿童房", "右上卧室", "卧室"]
+    },
+    "walk_in_closet": {
+      "type": "room",
+      "shape": "rect",
+      "center": [21.2, 2.35],
+      "size": [9.6, 10.3],
+      "aliases": ["walk in closet", "closet", "wardrobe room", "衣帽间", "步入式衣柜"]
+    },
+    "master_bedroom": {
+      "type": "room",
+      "shape": "rect",
+      "center": [21.2, -11.4],
+      "size": [9.6, 17.2],
+      "aliases": ["master bedroom", "main bedroom", "bedroom with kang", "主卧", "带火炕的卧室", "右下卧室", "卧室"]
+    },
+    "entry_hall": {
+      "type": "room",
+      "shape": "rect",
+      "center": [9.75, -12.8],
+      "size": [9.5, 14.4],
+      "aliases": ["entry hall", "foyer", "entrance", "玄关", "入户门厅", "门厅"]
+    },
+    "living_room": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-4.75, -3.75],
+      "size": [19.5, 22.5],
+      "aliases": ["living room", "sitting room", "客厅", "起居室"]
+    },
+    "balcony": {
+      "type": "room",
+      "shape": "rect",
+      "center": [-7.05, -17.5],
+      "size": [10.9, 5.0],
+      "aliases": ["balcony", "terrace", "阳台"]
+    },
+    "wool_carpet": {
+      "type": "navigable_surface",
+      "shape": "rect",
+      "center": [-2.5, -8.2],
+      "size": [5.2, 4.7],
+      "aliases": ["wool carpet", "carpet", "rug", "living room carpet", "羊毛地毯", "地毯", "客厅地毯"]
+    },
+    "reading_quiet_zone": {
+      "type": "caution_region",
+      "shape": "rect",
+      "center": [3.0, 14.8],
+      "size": [7.0, 6.0],
+      "aliases": ["reading zone", "quiet reading area", "reading area", "阅读区", "安静阅读区", "书房阅读区"]
+    }
+  },
+  "objects": {
+    "kitchen_counter": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-23.2, 15.7],
+      "size": [4.5, 3.0],
+      "aliases": ["kitchen counter", "counter", "橱柜", "厨房台面"]
+    },
+    "stove": {
+      "type": "hazard_object",
+      "shape": "rect",
+      "position": [-22.1, 17.2],
+      "size": [1.2, 1.0],
+      "default_min_distance": 1.2,
+      "aliases": ["stove", "hot stove", "burner", "灶台", "热灶台", "火源"]
+    },
+    "bathtub": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-18.5, 3.5],
+      "size": [2.5, 2.5],
+      "aliases": ["bathtub", "shower", "浴缸", "淋浴间"]
+    },
+    "toilet": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-24.0, 2.6],
+      "size": [1.5, 1.8],
+      "aliases": ["toilet", "马桶", "坐便器"]
+    },
+    "guest_bed": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-23.1, -12.5],
+      "size": [4.4, 5.6],
+      "aliases": ["guest bed", "bed", "客卧床", "床"]
+    },
+    "dining_table": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-8.2, 13.5],
+      "size": [4.5, 3.2],
+      "aliases": ["dining table", "table", "餐桌", "桌子"]
+    },
+    "study_desk": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [7.2, 15.0],
+      "size": [2.8, 2.0],
+      "aliases": ["study desk", "desk", "书桌", "办公桌"]
+    },
+    "bookshelf": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [0.6, 15.2],
+      "size": [1.0, 5.0],
+      "aliases": ["bookshelf", "bookcase", "书架"]
+    },
+    "secondary_bed": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [22.5, 14.0],
+      "size": [5.2, 4.8],
+      "aliases": ["second bed", "secondary bed", "次卧床", "儿童床", "床"]
+    },
+    "master_bed": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [22.5, -8.8],
+      "size": [5.0, 4.8],
+      "aliases": ["master bed", "main bed", "主卧床", "大床", "床"]
+    },
+    "sofa": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-2.5, -4.2],
+      "size": [4.8, 1.5],
+      "aliases": ["sofa", "couch", "沙发"]
+    },
+    "coffee_table": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [-2.5, -8.2],
+      "size": [3.5, 2.2],
+      "aliases": ["coffee table", "tea table", "茶几", "客厅桌"]
+    },
+    "fragile_vase": {
+      "type": "keep_distance_object",
+      "shape": "circle",
+      "position": [-2.2, -7.5],
+      "radius": 0.45,
+      "default_min_distance": 1.2,
+      "aliases": ["fragile vase", "vase", "antique vase", "flower vase", "易碎花瓶", "古董花瓶", "花瓶", "那个东西"]
+    },
+    "entry_cabinet": {
+      "type": "furniture",
+      "shape": "rect",
+      "position": [12.8, -10.4],
+      "size": [1.0, 5.2],
+      "aliases": ["entry cabinet", "shoe cabinet", "玄关柜", "鞋柜"]
+    }
+  }
+}
