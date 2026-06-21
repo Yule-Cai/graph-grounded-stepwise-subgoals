@@ -1,0 +1,4 @@
+model,n,match_rate,match_95ci,parse_ok_rate,parse_95ci,first_option_rate,first_option_95ci,random_rate
+google/gemma-4-e4b,100,74.0,"[64.6, 81.6]",74.0,"[64.6, 81.6]",26.0,"[18.4, 35.4]",20.0
+liquid/lfm2.5-1.2b,100,33.0,"[24.6, 42.7]",100.0,"[96.3, 100.0]",26.0,"[18.4, 35.4]",20.0
+nvidia/nemotron-3-nano-4b,100,94.0,"[87.5, 97.2]",94.0,"[87.5, 97.2]",26.0,"[18.4, 35.4]",20.0

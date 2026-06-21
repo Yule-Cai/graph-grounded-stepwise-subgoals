@@ -1,0 +1,9 @@
+Model,Scenario,Algo,Success (%),Safe success (%),Strict valid (%)
+LMSTUDIO / lfm-2.5-8b-1b-hermes-ft,Long-horizon,PPO,64.0,0.0,100.0
+LMSTUDIO / nvidia_nemotron-3-nano-4b,Long-horizon,PPO,64.0,0.0,90.0
+LMSTUDIO / lfm-2.5-8b-1b-hermes-ft,Long-horizon,SAC,40.0,0.0,100.0
+LMSTUDIO / nvidia_nemotron-3-nano-4b,Long-horizon,SAC,40.0,0.0,91.0
+LMSTUDIO / lfm-2.5-8b-1b-hermes-ft,Semantic constraint,PPO,59.0,59.0,100.0
+LMSTUDIO / nvidia_nemotron-3-nano-4b,Semantic constraint,PPO,59.0,59.0,78.0
+LMSTUDIO / lfm-2.5-8b-1b-hermes-ft,Semantic constraint,SAC,47.0,47.0,100.0
+LMSTUDIO / nvidia_nemotron-3-nano-4b,Semantic constraint,SAC,47.0,47.0,71.0
