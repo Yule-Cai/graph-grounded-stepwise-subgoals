@@ -1,0 +1,275 @@
+{
+  "map_id": "apartment_simple",
+  "label": "realistic small apartment",
+  "spawn": [
+    -10.0,
+    -24.0,
+    0.35
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "apt_living_bedroom_wall",
+      "center": [
+        -2.0,
+        9.5
+      ],
+      "size": [
+        0.28,
+        20.0
+      ]
+    },
+    {
+      "name": "apt_living_kitchen_wall",
+      "center": [
+        4.5,
+        -13.0
+      ],
+      "size": [
+        0.28,
+        8.0
+      ]
+    },
+    {
+      "name": "apt_hall_wall_left",
+      "center": [
+        -5.8,
+        -2.0
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "apt_hall_wall_right",
+      "center": [
+        4.0,
+        -2.0
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "apt_bath_wall",
+      "center": [
+        7.0,
+        7.0
+      ],
+      "size": [
+        0.28,
+        8.0
+      ]
+    },
+    {
+      "name": "apt_study_wall",
+      "center": [
+        2.8,
+        13.0
+      ],
+      "size": [
+        0.28,
+        12.0
+      ]
+    },
+    {
+      "name": "apt_bedroom_divider",
+      "center": [
+        -8.0,
+        3.0
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "apt_kitchen_counter",
+      "center": [
+        10.0,
+        -18.8
+      ],
+      "size": [
+        4.8,
+        1.2
+      ]
+    },
+    {
+      "name": "apt_island",
+      "center": [
+        8.0,
+        -14.2
+      ],
+      "size": [
+        2.8,
+        1.8
+      ]
+    },
+    {
+      "name": "apt_sofa",
+      "center": [
+        -6.2,
+        -14.2
+      ],
+      "size": [
+        5.0,
+        2.0
+      ]
+    },
+    {
+      "name": "apt_tv_console",
+      "center": [
+        1.5,
+        -16.8
+      ],
+      "size": [
+        3.5,
+        0.8
+      ]
+    },
+    {
+      "name": "apt_coffee_table",
+      "center": [
+        -2.0,
+        -10.0
+      ],
+      "size": [
+        2.4,
+        1.7
+      ]
+    },
+    {
+      "name": "apt_bed_main",
+      "center": [
+        -9.2,
+        14.8
+      ],
+      "size": [
+        4.8,
+        5.5
+      ]
+    },
+    {
+      "name": "apt_bed_child",
+      "center": [
+        -9.4,
+        5.2
+      ],
+      "size": [
+        4.4,
+        3.2
+      ]
+    },
+    {
+      "name": "apt_desk",
+      "center": [
+        4.5,
+        16.5
+      ],
+      "size": [
+        3.2,
+        1.8
+      ]
+    },
+    {
+      "name": "apt_bath_fixture",
+      "center": [
+        11.0,
+        7.5
+      ],
+      "size": [
+        2.0,
+        3.2
+      ]
+    },
+    {
+      "name": "apt_closet",
+      "center": [
+        -4.0,
+        18.5
+      ],
+      "size": [
+        2.0,
+        4.0
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -10,
+      25
+    ],
+    [
+      -4.0,
+      -12.2
+    ],
+    [
+      -8.4,
+      11.2
+    ],
+    [
+      4.5,
+      13.5
+    ],
+    [
+      8.5,
+      -17.4
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/apartment_simple.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

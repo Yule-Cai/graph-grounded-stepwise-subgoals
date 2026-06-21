@@ -1,0 +1,1 @@
+case_id,scenario,map_id,start_x,start_y,goal_x,goal_y,yaw,euclidean_distance,candidate_count,straight_line_safe,difficulty_tag,route_constraint,risk_center_x,risk_center_y,risk_radius

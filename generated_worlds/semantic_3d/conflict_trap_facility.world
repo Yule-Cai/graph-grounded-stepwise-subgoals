@@ -1,0 +1,472 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="conflict_trap_facility">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="conflict_trap_facility_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>43.000 87.000 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>43.000 87.000 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 44.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -44.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-22.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 88.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 88.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>22.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 88.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 88.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_loop_core">
+      <static>true</static>
+      <pose>0.500 -1.000 0.625 0 0 0</pose>
+      <link name="trap_loop_core_link">
+        <collision name="trap_loop_core_collision">
+          <geometry>
+            <box><size>6.600 24.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_loop_core_visual">
+          <geometry>
+            <box><size>6.600 24.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_w_l1">
+      <static>true</static>
+      <pose>-7.200 -30.000 0.625 0 0 0</pose>
+      <link name="trap_wall_w_l1_link">
+        <collision name="trap_wall_w_l1_collision">
+          <geometry>
+            <box><size>0.300 13.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_w_l1_visual">
+          <geometry>
+            <box><size>0.300 13.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_w_l2">
+      <static>true</static>
+      <pose>-7.200 -9.000 0.625 0 0 0</pose>
+      <link name="trap_wall_w_l2_link">
+        <collision name="trap_wall_w_l2_collision">
+          <geometry>
+            <box><size>0.300 14.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_w_l2_visual">
+          <geometry>
+            <box><size>0.300 14.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_w_l3">
+      <static>true</static>
+      <pose>-7.200 15.000 0.625 0 0 0</pose>
+      <link name="trap_wall_w_l3_link">
+        <collision name="trap_wall_w_l3_collision">
+          <geometry>
+            <box><size>0.300 22.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_w_l3_visual">
+          <geometry>
+            <box><size>0.300 22.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_e_l1">
+      <static>true</static>
+      <pose>7.400 -31.000 0.625 0 0 0</pose>
+      <link name="trap_wall_e_l1_link">
+        <collision name="trap_wall_e_l1_collision">
+          <geometry>
+            <box><size>0.300 12.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_e_l1_visual">
+          <geometry>
+            <box><size>0.300 12.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_e_l2">
+      <static>true</static>
+      <pose>7.400 -10.000 0.625 0 0 0</pose>
+      <link name="trap_wall_e_l2_link">
+        <collision name="trap_wall_e_l2_collision">
+          <geometry>
+            <box><size>0.300 13.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_e_l2_visual">
+          <geometry>
+            <box><size>0.300 13.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_wall_e_l3">
+      <static>true</static>
+      <pose>7.400 15.000 0.625 0 0 0</pose>
+      <link name="trap_wall_e_l3_link">
+        <collision name="trap_wall_e_l3_collision">
+          <geometry>
+            <box><size>0.300 20.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_wall_e_l3_visual">
+          <geometry>
+            <box><size>0.300 20.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_s_w">
+      <static>true</static>
+      <pose>-3.000 -24.000 0.375 0 0 0</pose>
+      <link name="trap_cross_s_w_link">
+        <collision name="trap_cross_s_w_collision">
+          <geometry>
+            <box><size>8.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_s_w_visual">
+          <geometry>
+            <box><size>8.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_s_e">
+      <static>true</static>
+      <pose>8.500 -24.000 0.375 0 0 0</pose>
+      <link name="trap_cross_s_e_link">
+        <collision name="trap_cross_s_e_collision">
+          <geometry>
+            <box><size>6.800 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_s_e_visual">
+          <geometry>
+            <box><size>6.800 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_m_w">
+      <static>true</static>
+      <pose>-12.000 -3.000 0.375 0 0 0</pose>
+      <link name="trap_cross_m_w_link">
+        <collision name="trap_cross_m_w_collision">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_m_w_visual">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_m_e">
+      <static>true</static>
+      <pose>12.500 2.500 0.375 0 0 0</pose>
+      <link name="trap_cross_m_e_link">
+        <collision name="trap_cross_m_e_collision">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_m_e_visual">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_n_w">
+      <static>true</static>
+      <pose>-6.800 26.000 0.375 0 0 0</pose>
+      <link name="trap_cross_n_w_link">
+        <collision name="trap_cross_n_w_collision">
+          <geometry>
+            <box><size>9.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_n_w_visual">
+          <geometry>
+            <box><size>9.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_cross_n_e">
+      <static>true</static>
+      <pose>11.500 22.000 0.375 0 0 0</pose>
+      <link name="trap_cross_n_e_link">
+        <collision name="trap_cross_n_e_collision">
+          <geometry>
+            <box><size>8.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_cross_n_e_visual">
+          <geometry>
+            <box><size>8.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_store_wall">
+      <static>true</static>
+      <pose>9.000 31.500 0.625 0 0 0</pose>
+      <link name="trap_store_wall_link">
+        <collision name="trap_store_wall_collision">
+          <geometry>
+            <box><size>0.300 12.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_store_wall_visual">
+          <geometry>
+            <box><size>0.300 12.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_dead_end_a">
+      <static>true</static>
+      <pose>-17.000 -16.000 0.375 0 0 0</pose>
+      <link name="trap_dead_end_a_link">
+        <collision name="trap_dead_end_a_collision">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_dead_end_a_visual">
+          <geometry>
+            <box><size>7.000 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_dead_end_b">
+      <static>true</static>
+      <pose>17.000 6.000 0.375 0 0 0</pose>
+      <link name="trap_dead_end_b_link">
+        <collision name="trap_dead_end_b_collision">
+          <geometry>
+            <box><size>6.800 0.300 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_dead_end_b_visual">
+          <geometry>
+            <box><size>6.800 0.300 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_table_1">
+      <static>true</static>
+      <pose>-2.500 18.000 0.275 0 0 0</pose>
+      <link name="trap_table_1_link">
+        <collision name="trap_table_1_collision">
+          <geometry>
+            <box><size>3.200 2.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_table_1_visual">
+          <geometry>
+            <box><size>3.200 2.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_table_2">
+      <static>true</static>
+      <pose>2.500 23.500 0.275 0 0 0</pose>
+      <link name="trap_table_2_link">
+        <collision name="trap_table_2_collision">
+          <geometry>
+            <box><size>3.000 2.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_table_2_visual">
+          <geometry>
+            <box><size>3.000 2.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_bed_1">
+      <static>true</static>
+      <pose>-15.500 -4.000 0.275 0 0 0</pose>
+      <link name="trap_bed_1_link">
+        <collision name="trap_bed_1_collision">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_bed_1_visual">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_bed_2">
+      <static>true</static>
+      <pose>-15.500 10.500 0.275 0 0 0</pose>
+      <link name="trap_bed_2_link">
+        <collision name="trap_bed_2_collision">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_bed_2_visual">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_bed_3">
+      <static>true</static>
+      <pose>-15.500 24.500 0.275 0 0 0</pose>
+      <link name="trap_bed_3_link">
+        <collision name="trap_bed_3_collision">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_bed_3_visual">
+          <geometry>
+            <box><size>3.500 2.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="trap_lab_bench">
+      <static>true</static>
+      <pose>15.000 -15.000 0.275 0 0 0</pose>
+      <link name="trap_lab_bench_link">
+        <collision name="trap_lab_bench_collision">
+          <geometry>
+            <box><size>5.000 1.900 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="trap_lab_bench_visual">
+          <geometry>
+            <box><size>5.000 1.900 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

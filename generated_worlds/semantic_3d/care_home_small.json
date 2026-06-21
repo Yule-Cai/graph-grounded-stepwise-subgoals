@@ -1,0 +1,327 @@
+{
+  "map_id": "care_home_small",
+  "label": "small care home",
+  "spawn": [
+    0.0,
+    -25.5,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "care_west_spine",
+      "center": [
+        -4.7,
+        7
+      ],
+      "size": [
+        0.28,
+        36
+      ]
+    },
+    {
+      "name": "care_east_spine",
+      "center": [
+        4.7,
+        7
+      ],
+      "size": [
+        0.28,
+        36
+      ]
+    },
+    {
+      "name": "care_west_room_divider_a",
+      "center": [
+        -8.8,
+        -2.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_west_room_divider_b",
+      "center": [
+        -8.8,
+        8.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_west_room_divider_c",
+      "center": [
+        -8.8,
+        18.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_east_room_divider_a",
+      "center": [
+        8.8,
+        -2.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_east_room_divider_b",
+      "center": [
+        8.8,
+        8.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_east_room_divider_c",
+      "center": [
+        8.8,
+        18.0
+      ],
+      "size": [
+        7.0,
+        0.24
+      ]
+    },
+    {
+      "name": "care_lobby_wall_l",
+      "center": [
+        -7.2,
+        -12
+      ],
+      "size": [
+        0.28,
+        7.0
+      ]
+    },
+    {
+      "name": "care_lobby_wall_r",
+      "center": [
+        7.2,
+        -12
+      ],
+      "size": [
+        0.28,
+        7.0
+      ]
+    },
+    {
+      "name": "care_dining_table",
+      "center": [
+        0,
+        5.2
+      ],
+      "size": [
+        4.2,
+        2.0
+      ]
+    },
+    {
+      "name": "care_sofa_1",
+      "center": [
+        -4.8,
+        -20.0
+      ],
+      "size": [
+        3.2,
+        1.8
+      ]
+    },
+    {
+      "name": "care_sofa_2",
+      "center": [
+        4.8,
+        -20.0
+      ],
+      "size": [
+        3.2,
+        1.8
+      ]
+    },
+    {
+      "name": "care_med_wall",
+      "center": [
+        0,
+        18.5
+      ],
+      "size": [
+        7.8,
+        0.28
+      ]
+    },
+    {
+      "name": "care_bed_w1",
+      "center": [
+        -8.8,
+        3
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_bed_w2",
+      "center": [
+        -8.8,
+        14
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_bed_w3",
+      "center": [
+        -8.8,
+        24
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_bed_e1",
+      "center": [
+        8.8,
+        3
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_bed_e2",
+      "center": [
+        8.8,
+        14
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_bed_e3",
+      "center": [
+        8.8,
+        24
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "care_nurse_cart",
+      "center": [
+        0.0,
+        -6.0
+      ],
+      "size": [
+        1.8,
+        1.2
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      0,
+      27
+    ],
+    [
+      0,
+      -19
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      -8.8,
+      9
+    ],
+    [
+      8.8,
+      9
+    ],
+    [
+      0,
+      23
+    ],
+    [
+      -2.8,
+      -16.5
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/care_home_small.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

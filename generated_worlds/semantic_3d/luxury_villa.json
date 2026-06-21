@@ -1,0 +1,345 @@
+{
+  "map_id": "luxury_villa",
+  "label": "large villa with grand living room, kitchen wing, private bedrooms and bathrooms",
+  "spawn": [
+    -17.5,
+    -36.0,
+    0.35
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        42.0
+      ],
+      "size": [
+        48,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -42.0
+      ],
+      "size": [
+        48,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -24.0,
+        0
+      ],
+      "size": [
+        0.35,
+        84
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        24.0,
+        0
+      ],
+      "size": [
+        0.35,
+        84
+      ]
+    },
+    {
+      "name": "home_public_private_wall_w",
+      "center": [
+        -13.0,
+        4.0
+      ],
+      "size": [
+        15.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "home_public_private_wall_e",
+      "center": [
+        13.0,
+        4.0
+      ],
+      "size": [
+        15.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "home_left_private_wall",
+      "center": [
+        -5.4,
+        22.5
+      ],
+      "size": [
+        0.28,
+        31.0
+      ]
+    },
+    {
+      "name": "home_right_private_wall",
+      "center": [
+        5.4,
+        22.5
+      ],
+      "size": [
+        0.28,
+        31.0
+      ]
+    },
+    {
+      "name": "home_kitchen_side_wall",
+      "center": [
+        7.4,
+        -25.0
+      ],
+      "size": [
+        0.28,
+        26.0
+      ]
+    },
+    {
+      "name": "home_kitchen_dining_wall_w",
+      "center": [
+        -12.4,
+        -9.5
+      ],
+      "size": [
+        16.8,
+        0.28
+      ]
+    },
+    {
+      "name": "home_kitchen_dining_wall_e",
+      "center": [
+        12.4,
+        -9.5
+      ],
+      "size": [
+        16.8,
+        0.28
+      ]
+    },
+    {
+      "name": "home_bath_wall_w",
+      "center": [
+        -13.100000000000001,
+        17.0
+      ],
+      "size": [
+        15.4,
+        0.28
+      ]
+    },
+    {
+      "name": "home_bath_wall_e",
+      "center": [
+        13.100000000000001,
+        17.0
+      ],
+      "size": [
+        15.4,
+        0.28
+      ]
+    },
+    {
+      "name": "luxury_sofa",
+      "center": [
+        -8.4,
+        -17.5
+      ],
+      "size": [
+        5.28,
+        1.6
+      ]
+    },
+    {
+      "name": "luxury_coffee_table",
+      "center": [
+        -2.4,
+        -13.0
+      ],
+      "size": [
+        2.2,
+        1.3
+      ]
+    },
+    {
+      "name": "luxury_dining_table",
+      "center": [
+        0.0,
+        -3.0
+      ],
+      "size": [
+        2.8,
+        1.6
+      ]
+    },
+    {
+      "name": "luxury_kitchen_counter",
+      "center": [
+        11.76,
+        -21.0
+      ],
+      "size": [
+        4.0,
+        1.0
+      ]
+    },
+    {
+      "name": "luxury_kitchen_island",
+      "center": [
+        9.6,
+        -15.0
+      ],
+      "size": [
+        2.3,
+        1.4
+      ]
+    },
+    {
+      "name": "luxury_bed_left",
+      "center": [
+        -11.4,
+        12.0
+      ],
+      "size": [
+        3.8,
+        4.2
+      ]
+    },
+    {
+      "name": "luxury_bed_right",
+      "center": [
+        10.799999999999999,
+        12.0
+      ],
+      "size": [
+        3.6,
+        4.0
+      ]
+    },
+    {
+      "name": "luxury_bath_fixture",
+      "center": [
+        0.0,
+        22.5
+      ],
+      "size": [
+        2.1,
+        2.6
+      ]
+    },
+    {
+      "name": "luxury_fragile_object",
+      "center": [
+        -3.0,
+        -6.5
+      ],
+      "size": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "luxury_low_stair_core",
+      "center": [
+        0.0,
+        2.0
+      ],
+      "size": [
+        5.0,
+        10.0
+      ]
+    },
+    {
+      "name": "luxury_gallery_screen_w",
+      "center": [
+        -16.0,
+        -30.0
+      ],
+      "size": [
+        16.0,
+        0.28
+      ]
+    },
+    {
+      "name": "luxury_gallery_screen_e",
+      "center": [
+        16.0,
+        -30.0
+      ],
+      "size": [
+        16.0,
+        0.28
+      ]
+    },
+    {
+      "name": "luxury_west_suite_hint",
+      "center": [
+        -12.0,
+        30.0
+      ],
+      "size": [
+        0.28,
+        24.0
+      ]
+    },
+    {
+      "name": "luxury_east_suite_hint",
+      "center": [
+        12.0,
+        30.0
+      ],
+      "size": [
+        0.28,
+        24.0
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      0.0,
+      37.0
+    ],
+    [
+      -12.0,
+      -18.0
+    ],
+    [
+      18.0,
+      -34.0
+    ],
+    [
+      -17.0,
+      13.0
+    ],
+    [
+      14.0,
+      13.0
+    ],
+    [
+      4.0,
+      24.0
+    ]
+  ],
+  "x_bounds": [
+    -24.0,
+    24.0
+  ],
+  "y_bounds": [
+    -42.0,
+    42.0
+  ],
+  "world_path": "generated_worlds/semantic_3d/luxury_villa.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

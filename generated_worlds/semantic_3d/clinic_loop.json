@@ -1,0 +1,279 @@
+{
+  "map_id": "clinic_loop",
+  "label": "looping clinic",
+  "spawn": [
+    -11.0,
+    -26.0,
+    0.25
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "maze_wall_1",
+      "center": [
+        -6.8,
+        -14.0
+      ],
+      "size": [
+        0.28,
+        18.0
+      ]
+    },
+    {
+      "name": "maze_wall_2",
+      "center": [
+        -1.5,
+        -21.0
+      ],
+      "size": [
+        11.0,
+        0.28
+      ]
+    },
+    {
+      "name": "maze_wall_3",
+      "center": [
+        4.2,
+        -9.8
+      ],
+      "size": [
+        0.28,
+        19.0
+      ]
+    },
+    {
+      "name": "maze_wall_4",
+      "center": [
+        -4.3,
+        -3.0
+      ],
+      "size": [
+        12.0,
+        0.28
+      ]
+    },
+    {
+      "name": "maze_wall_5",
+      "center": [
+        -10.2,
+        4.5
+      ],
+      "size": [
+        0.28,
+        18.0
+      ]
+    },
+    {
+      "name": "maze_wall_6",
+      "center": [
+        -2.0,
+        9.5
+      ],
+      "size": [
+        13.5,
+        0.28
+      ]
+    },
+    {
+      "name": "maze_wall_7",
+      "center": [
+        5.8,
+        14.5
+      ],
+      "size": [
+        0.28,
+        15.0
+      ]
+    },
+    {
+      "name": "maze_wall_8",
+      "center": [
+        0.8,
+        21.0
+      ],
+      "size": [
+        10.5,
+        0.28
+      ]
+    },
+    {
+      "name": "maze_bed_1",
+      "center": [
+        -9.5,
+        18.0
+      ],
+      "size": [
+        3.2,
+        2.2
+      ]
+    },
+    {
+      "name": "maze_bed_2",
+      "center": [
+        -9.5,
+        12.8
+      ],
+      "size": [
+        3.2,
+        2.2
+      ]
+    },
+    {
+      "name": "maze_exam_bed_a",
+      "center": [
+        8.8,
+        15.8
+      ],
+      "size": [
+        3.0,
+        1.6
+      ]
+    },
+    {
+      "name": "maze_exam_bed_b",
+      "center": [
+        8.8,
+        21.0
+      ],
+      "size": [
+        3.0,
+        1.6
+      ]
+    },
+    {
+      "name": "maze_counter",
+      "center": [
+        7.8,
+        -16.5
+      ],
+      "size": [
+        4.2,
+        2.0
+      ]
+    },
+    {
+      "name": "maze_waiting_chair_a",
+      "center": [
+        -8.8,
+        -23.5
+      ],
+      "size": [
+        1.1,
+        1.1
+      ]
+    },
+    {
+      "name": "maze_waiting_chair_b",
+      "center": [
+        -6.4,
+        -23.5
+      ],
+      "size": [
+        1.1,
+        1.1
+      ]
+    },
+    {
+      "name": "maze_pharmacy_shelf_a",
+      "center": [
+        9.8,
+        -13.0
+      ],
+      "size": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "maze_pharmacy_shelf_b",
+      "center": [
+        6.2,
+        -20.0
+      ],
+      "size": [
+        1.0,
+        5.0
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      10.5,
+      25
+    ],
+    [
+      -8.5,
+      -21
+    ],
+    [
+      7.7,
+      -14.8
+    ],
+    [
+      -9.2,
+      15
+    ],
+    [
+      9.5,
+      18
+    ],
+    [
+      -1.5,
+      3.0
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/clinic_loop.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

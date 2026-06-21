@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="research_lab">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="research_lab_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_spine_wall">
+      <static>true</static>
+      <pose>-1.300 0.000 0.625 0 0 0</pose>
+      <link name="lab_spine_wall_link">
+        <collision name="lab_spine_wall_collision">
+          <geometry>
+            <box><size>0.280 54.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_spine_wall_visual">
+          <geometry>
+            <box><size>0.280 54.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_door_block_1">
+      <static>true</static>
+      <pose>1.800 -7.000 0.375 0 0 0</pose>
+      <link name="lab_door_block_1_link">
+        <collision name="lab_door_block_1_collision">
+          <geometry>
+            <box><size>6.000 0.280 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_door_block_1_visual">
+          <geometry>
+            <box><size>6.000 0.280 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_door_block_2">
+      <static>true</static>
+      <pose>1.800 14.000 0.375 0 0 0</pose>
+      <link name="lab_door_block_2_link">
+        <collision name="lab_door_block_2_collision">
+          <geometry>
+            <box><size>6.000 0.280 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_door_block_2_visual">
+          <geometry>
+            <box><size>6.000 0.280 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_chem_wall">
+      <static>true</static>
+      <pose>3.200 7.000 0.625 0 0 0</pose>
+      <link name="lab_chem_wall_link">
+        <collision name="lab_chem_wall_collision">
+          <geometry>
+            <box><size>0.280 16.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_chem_wall_visual">
+          <geometry>
+            <box><size>0.280 16.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_storage_wall">
+      <static>true</static>
+      <pose>3.200 22.000 0.625 0 0 0</pose>
+      <link name="lab_storage_wall_link">
+        <collision name="lab_storage_wall_collision">
+          <geometry>
+            <box><size>0.280 7.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_storage_wall_visual">
+          <geometry>
+            <box><size>0.280 7.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_bench_1">
+      <static>true</static>
+      <pose>7.200 -19.000 0.275 0 0 0</pose>
+      <link name="lab_bench_1_link">
+        <collision name="lab_bench_1_collision">
+          <geometry>
+            <box><size>5.500 1.700 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_bench_1_visual">
+          <geometry>
+            <box><size>5.500 1.700 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_bench_2">
+      <static>true</static>
+      <pose>7.200 -13.000 0.275 0 0 0</pose>
+      <link name="lab_bench_2_link">
+        <collision name="lab_bench_2_collision">
+          <geometry>
+            <box><size>5.500 1.700 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_bench_2_visual">
+          <geometry>
+            <box><size>5.500 1.700 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_bench_3">
+      <static>true</static>
+      <pose>8.500 3.000 0.275 0 0 0</pose>
+      <link name="lab_bench_3_link">
+        <collision name="lab_bench_3_collision">
+          <geometry>
+            <box><size>5.000 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_bench_3_visual">
+          <geometry>
+            <box><size>5.000 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_bench_4">
+      <static>true</static>
+      <pose>8.500 10.500 0.275 0 0 0</pose>
+      <link name="lab_bench_4_link">
+        <collision name="lab_bench_4_collision">
+          <geometry>
+            <box><size>5.000 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_bench_4_visual">
+          <geometry>
+            <box><size>5.000 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_robot_cage">
+      <static>true</static>
+      <pose>9.000 -8.000 0.375 0 0 0</pose>
+      <link name="lab_robot_cage_link">
+        <collision name="lab_robot_cage_collision">
+          <geometry>
+            <box><size>4.000 2.000 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_robot_cage_visual">
+          <geometry>
+            <box><size>4.000 2.000 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_storage_shelf_a">
+      <static>true</static>
+      <pose>7.000 22.000 0.550 0 0 0</pose>
+      <link name="lab_storage_shelf_a_link">
+        <collision name="lab_storage_shelf_a_collision">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_storage_shelf_a_visual">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_storage_shelf_b">
+      <static>true</static>
+      <pose>10.000 22.000 0.550 0 0 0</pose>
+      <link name="lab_storage_shelf_b_link">
+        <collision name="lab_storage_shelf_b_collision">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_storage_shelf_b_visual">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="lab_airlock_counter">
+      <static>true</static>
+      <pose>-4.800 24.000 0.275 0 0 0</pose>
+      <link name="lab_airlock_counter_link">
+        <collision name="lab_airlock_counter_collision">
+          <geometry>
+            <box><size>3.500 1.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="lab_airlock_counter_visual">
+          <geometry>
+            <box><size>3.500 1.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,334 @@
+{
+  "map_id": "conflict_trap_facility",
+  "label": "conflict trap facility",
+  "spawn": [
+    -17.2,
+    -38.0,
+    0.3
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        44.0
+      ],
+      "size": [
+        44,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -44.0
+      ],
+      "size": [
+        44,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -22.0,
+        0
+      ],
+      "size": [
+        0.35,
+        88
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        22.0,
+        0
+      ],
+      "size": [
+        0.35,
+        88
+      ]
+    },
+    {
+      "name": "trap_loop_core",
+      "center": [
+        0.5,
+        -1.0
+      ],
+      "size": [
+        6.6,
+        24.0
+      ]
+    },
+    {
+      "name": "trap_wall_w_l1",
+      "center": [
+        -7.2,
+        -30.0
+      ],
+      "size": [
+        0.3,
+        13.0
+      ]
+    },
+    {
+      "name": "trap_wall_w_l2",
+      "center": [
+        -7.2,
+        -9.0
+      ],
+      "size": [
+        0.3,
+        14.0
+      ]
+    },
+    {
+      "name": "trap_wall_w_l3",
+      "center": [
+        -7.2,
+        15.0
+      ],
+      "size": [
+        0.3,
+        22.0
+      ]
+    },
+    {
+      "name": "trap_wall_e_l1",
+      "center": [
+        7.4,
+        -31.0
+      ],
+      "size": [
+        0.3,
+        12.0
+      ]
+    },
+    {
+      "name": "trap_wall_e_l2",
+      "center": [
+        7.4,
+        -10.0
+      ],
+      "size": [
+        0.3,
+        13.0
+      ]
+    },
+    {
+      "name": "trap_wall_e_l3",
+      "center": [
+        7.4,
+        15.0
+      ],
+      "size": [
+        0.3,
+        20.0
+      ]
+    },
+    {
+      "name": "trap_cross_s_w",
+      "center": [
+        -3.0,
+        -24.0
+      ],
+      "size": [
+        8.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_cross_s_e",
+      "center": [
+        8.5,
+        -24.0
+      ],
+      "size": [
+        6.8,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_cross_m_w",
+      "center": [
+        -12.0,
+        -3.0
+      ],
+      "size": [
+        7.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_cross_m_e",
+      "center": [
+        12.5,
+        2.5
+      ],
+      "size": [
+        7.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_cross_n_w",
+      "center": [
+        -6.8,
+        26.0
+      ],
+      "size": [
+        9.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_cross_n_e",
+      "center": [
+        11.5,
+        22.0
+      ],
+      "size": [
+        8.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_store_wall",
+      "center": [
+        9.0,
+        31.5
+      ],
+      "size": [
+        0.3,
+        12.0
+      ]
+    },
+    {
+      "name": "trap_dead_end_a",
+      "center": [
+        -17.0,
+        -16.0
+      ],
+      "size": [
+        7.0,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_dead_end_b",
+      "center": [
+        17.0,
+        6.0
+      ],
+      "size": [
+        6.8,
+        0.3
+      ]
+    },
+    {
+      "name": "trap_table_1",
+      "center": [
+        -2.5,
+        18.0
+      ],
+      "size": [
+        3.2,
+        2.0
+      ]
+    },
+    {
+      "name": "trap_table_2",
+      "center": [
+        2.5,
+        23.5
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "trap_bed_1",
+      "center": [
+        -15.5,
+        -4.0
+      ],
+      "size": [
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "name": "trap_bed_2",
+      "center": [
+        -15.5,
+        10.5
+      ],
+      "size": [
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "name": "trap_bed_3",
+      "center": [
+        -15.5,
+        24.5
+      ],
+      "size": [
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "name": "trap_lab_bench",
+      "center": [
+        15.0,
+        -15.0
+      ],
+      "size": [
+        5.0,
+        1.9
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      15.8,
+      38.0
+    ],
+    [
+      -13.5,
+      -35.0
+    ],
+    [
+      0.5,
+      16.0
+    ],
+    [
+      -15.0,
+      1.5
+    ],
+    [
+      14.4,
+      -16.6
+    ],
+    [
+      14.5,
+      30.5
+    ]
+  ],
+  "x_bounds": [
+    -21.5,
+    21.5
+  ],
+  "y_bounds": [
+    -43.5,
+    43.5
+  ],
+  "world_path": "generated_worlds/semantic_3d/conflict_trap_facility.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

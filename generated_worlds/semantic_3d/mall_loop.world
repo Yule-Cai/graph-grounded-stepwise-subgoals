@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="mall_loop">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="mall_loop_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_atrium_block">
+      <static>true</static>
+      <pose>0.000 0.000 0.375 0 0 0</pose>
+      <link name="mall_atrium_block_link">
+        <collision name="mall_atrium_block_collision">
+          <geometry>
+            <box><size>6.800 19.000 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_atrium_block_visual">
+          <geometry>
+            <box><size>6.800 19.000 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_shop_wall_w1">
+      <static>true</static>
+      <pose>-5.400 -18.000 0.625 0 0 0</pose>
+      <link name="mall_shop_wall_w1_link">
+        <collision name="mall_shop_wall_w1_collision">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_shop_wall_w1_visual">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_shop_wall_w2">
+      <static>true</static>
+      <pose>-5.400 18.000 0.625 0 0 0</pose>
+      <link name="mall_shop_wall_w2_link">
+        <collision name="mall_shop_wall_w2_collision">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_shop_wall_w2_visual">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_shop_wall_e1">
+      <static>true</static>
+      <pose>5.400 -18.000 0.625 0 0 0</pose>
+      <link name="mall_shop_wall_e1_link">
+        <collision name="mall_shop_wall_e1_collision">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_shop_wall_e1_visual">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_shop_wall_e2">
+      <static>true</static>
+      <pose>5.400 18.000 0.625 0 0 0</pose>
+      <link name="mall_shop_wall_e2_link">
+        <collision name="mall_shop_wall_e2_collision">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_shop_wall_e2_visual">
+          <geometry>
+            <box><size>0.280 10.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_bridge_s">
+      <static>true</static>
+      <pose>0.000 -11.800 0.375 0 0 0</pose>
+      <link name="mall_bridge_s_link">
+        <collision name="mall_bridge_s_collision">
+          <geometry>
+            <box><size>8.000 0.280 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_bridge_s_visual">
+          <geometry>
+            <box><size>8.000 0.280 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_bridge_n">
+      <static>true</static>
+      <pose>0.000 11.800 0.375 0 0 0</pose>
+      <link name="mall_bridge_n_link">
+        <collision name="mall_bridge_n_collision">
+          <geometry>
+            <box><size>8.000 0.280 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_bridge_n_visual">
+          <geometry>
+            <box><size>8.000 0.280 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_kiosk_1">
+      <static>true</static>
+      <pose>-9.000 -5.000 0.375 0 0 0</pose>
+      <link name="mall_kiosk_1_link">
+        <collision name="mall_kiosk_1_collision">
+          <geometry>
+            <box><size>2.000 2.000 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_kiosk_1_visual">
+          <geometry>
+            <box><size>2.000 2.000 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_kiosk_2">
+      <static>true</static>
+      <pose>9.000 5.000 0.375 0 0 0</pose>
+      <link name="mall_kiosk_2_link">
+        <collision name="mall_kiosk_2_collision">
+          <geometry>
+            <box><size>2.000 2.000 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_kiosk_2_visual">
+          <geometry>
+            <box><size>2.000 2.000 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_food_table_a">
+      <static>true</static>
+      <pose>9.000 -20.000 0.275 0 0 0</pose>
+      <link name="mall_food_table_a_link">
+        <collision name="mall_food_table_a_collision">
+          <geometry>
+            <box><size>2.000 1.400 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_food_table_a_visual">
+          <geometry>
+            <box><size>2.000 1.400 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_food_table_b">
+      <static>true</static>
+      <pose>9.000 -15.500 0.275 0 0 0</pose>
+      <link name="mall_food_table_b_link">
+        <collision name="mall_food_table_b_collision">
+          <geometry>
+            <box><size>2.000 1.400 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_food_table_b_visual">
+          <geometry>
+            <box><size>2.000 1.400 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_jewelry_counter">
+      <static>true</static>
+      <pose>-9.000 18.000 0.275 0 0 0</pose>
+      <link name="mall_jewelry_counter_link">
+        <collision name="mall_jewelry_counter_collision">
+          <geometry>
+            <box><size>3.500 1.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_jewelry_counter_visual">
+          <geometry>
+            <box><size>3.500 1.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="mall_kids_play_block">
+      <static>true</static>
+      <pose>9.000 18.000 0.375 0 0 0</pose>
+      <link name="mall_kids_play_block_link">
+        <collision name="mall_kids_play_block_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="mall_kids_play_block_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

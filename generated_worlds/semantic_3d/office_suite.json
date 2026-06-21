@@ -1,0 +1,407 @@
+{
+  "map_id": "office_suite",
+  "label": "office suite",
+  "spawn": [
+    -11.0,
+    -25.0,
+    0.45
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "office_north_wall_left",
+      "center": [
+        -3.0,
+        15.0
+      ],
+      "size": [
+        13.0,
+        0.28
+      ]
+    },
+    {
+      "name": "office_north_wall_right",
+      "center": [
+        6.0,
+        15.0
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "office_server_wall",
+      "center": [
+        4.8,
+        21
+      ],
+      "size": [
+        0.28,
+        11.0
+      ]
+    },
+    {
+      "name": "office_meeting_wall",
+      "center": [
+        -4.0,
+        21
+      ],
+      "size": [
+        0.28,
+        11.0
+      ]
+    },
+    {
+      "name": "office_desk_-7.5_-14",
+      "center": [
+        -7.5,
+        -14
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-7.5_-8",
+      "center": [
+        -7.5,
+        -8
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-7.5_-2",
+      "center": [
+        -7.5,
+        -2
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-7.5_4",
+      "center": [
+        -7.5,
+        4
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-7.5_10",
+      "center": [
+        -7.5,
+        10
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-3.5_-14",
+      "center": [
+        -3.5,
+        -14
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-3.5_-8",
+      "center": [
+        -3.5,
+        -8
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-3.5_-2",
+      "center": [
+        -3.5,
+        -2
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-3.5_4",
+      "center": [
+        -3.5,
+        4
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_-3.5_10",
+      "center": [
+        -3.5,
+        10
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_3.5_-14",
+      "center": [
+        3.5,
+        -14
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_3.5_-8",
+      "center": [
+        3.5,
+        -8
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_3.5_-2",
+      "center": [
+        3.5,
+        -2
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_3.5_4",
+      "center": [
+        3.5,
+        4
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_3.5_10",
+      "center": [
+        3.5,
+        10
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_7.5_-14",
+      "center": [
+        7.5,
+        -14
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_7.5_-8",
+      "center": [
+        7.5,
+        -8
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_7.5_-2",
+      "center": [
+        7.5,
+        -2
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_7.5_4",
+      "center": [
+        7.5,
+        4
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_desk_7.5_10",
+      "center": [
+        7.5,
+        10
+      ],
+      "size": [
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "name": "office_meeting_table",
+      "center": [
+        -8.5,
+        21.0
+      ],
+      "size": [
+        4.8,
+        2.0
+      ]
+    },
+    {
+      "name": "office_server_rack_a",
+      "center": [
+        8.8,
+        18.5
+      ],
+      "size": [
+        1.2,
+        4.0
+      ]
+    },
+    {
+      "name": "office_server_rack_b",
+      "center": [
+        10.6,
+        22.5
+      ],
+      "size": [
+        1.2,
+        4.0
+      ]
+    },
+    {
+      "name": "office_reception_counter",
+      "center": [
+        0.0,
+        24.0
+      ],
+      "size": [
+        5.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_printer_island",
+      "center": [
+        -10.0,
+        -4.0
+      ],
+      "size": [
+        1.8,
+        1.4
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -0.1,
+      25.2
+    ],
+    [
+      -8.6,
+      22.7
+    ],
+    [
+      8.7,
+      21.2
+    ],
+    [
+      0,
+      -4
+    ],
+    [
+      -8.5,
+      -4.1
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/office_suite.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

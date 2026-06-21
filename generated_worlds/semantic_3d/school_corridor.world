@@ -1,0 +1,693 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="school_corridor">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="school_corridor_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_1">
+      <static>true</static>
+      <pose>-6.500 -25.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_1_link">
+        <collision name="school_west_corridor_wall_1_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_1_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_2">
+      <static>true</static>
+      <pose>-6.500 -15.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_2_link">
+        <collision name="school_west_corridor_wall_2_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_2_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_3">
+      <static>true</static>
+      <pose>-6.500 -5.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_3_link">
+        <collision name="school_west_corridor_wall_3_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_3_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_4">
+      <static>true</static>
+      <pose>-6.500 5.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_4_link">
+        <collision name="school_west_corridor_wall_4_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_4_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_5">
+      <static>true</static>
+      <pose>-6.500 15.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_5_link">
+        <collision name="school_west_corridor_wall_5_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_5_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_corridor_wall_6">
+      <static>true</static>
+      <pose>-6.500 25.000 0.625 0 0 0</pose>
+      <link name="school_west_corridor_wall_6_link">
+        <collision name="school_west_corridor_wall_6_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_corridor_wall_6_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_1">
+      <static>true</static>
+      <pose>6.500 -25.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_1_link">
+        <collision name="school_east_corridor_wall_1_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_1_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_2">
+      <static>true</static>
+      <pose>6.500 -15.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_2_link">
+        <collision name="school_east_corridor_wall_2_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_2_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_3">
+      <static>true</static>
+      <pose>6.500 -5.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_3_link">
+        <collision name="school_east_corridor_wall_3_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_3_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_4">
+      <static>true</static>
+      <pose>6.500 5.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_4_link">
+        <collision name="school_east_corridor_wall_4_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_4_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_5">
+      <static>true</static>
+      <pose>6.500 15.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_5_link">
+        <collision name="school_east_corridor_wall_5_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_5_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_corridor_wall_6">
+      <static>true</static>
+      <pose>6.500 25.000 0.625 0 0 0</pose>
+      <link name="school_east_corridor_wall_6_link">
+        <collision name="school_east_corridor_wall_6_collision">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_corridor_wall_6_visual">
+          <geometry>
+            <box><size>0.280 6.300 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_room_divider_1">
+      <static>true</static>
+      <pose>-10.200 -20.000 0.625 0 0 0</pose>
+      <link name="school_west_room_divider_1_link">
+        <collision name="school_west_room_divider_1_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_room_divider_1_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_room_divider_2">
+      <static>true</static>
+      <pose>-10.200 -10.000 0.625 0 0 0</pose>
+      <link name="school_west_room_divider_2_link">
+        <collision name="school_west_room_divider_2_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_room_divider_2_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_room_divider_3">
+      <static>true</static>
+      <pose>-10.200 0.000 0.625 0 0 0</pose>
+      <link name="school_west_room_divider_3_link">
+        <collision name="school_west_room_divider_3_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_room_divider_3_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_room_divider_4">
+      <static>true</static>
+      <pose>-10.200 10.000 0.625 0 0 0</pose>
+      <link name="school_west_room_divider_4_link">
+        <collision name="school_west_room_divider_4_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_room_divider_4_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_room_divider_5">
+      <static>true</static>
+      <pose>-10.200 20.000 0.625 0 0 0</pose>
+      <link name="school_west_room_divider_5_link">
+        <collision name="school_west_room_divider_5_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_room_divider_5_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_room_divider_1">
+      <static>true</static>
+      <pose>10.200 -20.000 0.625 0 0 0</pose>
+      <link name="school_east_room_divider_1_link">
+        <collision name="school_east_room_divider_1_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_room_divider_1_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_room_divider_2">
+      <static>true</static>
+      <pose>10.200 -10.000 0.625 0 0 0</pose>
+      <link name="school_east_room_divider_2_link">
+        <collision name="school_east_room_divider_2_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_room_divider_2_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_room_divider_3">
+      <static>true</static>
+      <pose>10.200 0.000 0.625 0 0 0</pose>
+      <link name="school_east_room_divider_3_link">
+        <collision name="school_east_room_divider_3_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_room_divider_3_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_room_divider_4">
+      <static>true</static>
+      <pose>10.200 10.000 0.625 0 0 0</pose>
+      <link name="school_east_room_divider_4_link">
+        <collision name="school_east_room_divider_4_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_room_divider_4_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_room_divider_5">
+      <static>true</static>
+      <pose>10.200 20.000 0.625 0 0 0</pose>
+      <link name="school_east_room_divider_5_link">
+        <collision name="school_east_room_divider_5_collision">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_room_divider_5_visual">
+          <geometry>
+            <box><size>7.200 0.240 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_central_service_core">
+      <static>true</static>
+      <pose>0.000 1.500 0.625 0 0 0</pose>
+      <link name="school_central_service_core_link">
+        <collision name="school_central_service_core_collision">
+          <geometry>
+            <box><size>4.800 16.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_central_service_core_visual">
+          <geometry>
+            <box><size>4.800 16.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_service_wall_south_w">
+      <static>true</static>
+      <pose>-3.700 -8.200 0.625 0 0 0</pose>
+      <link name="school_service_wall_south_w_link">
+        <collision name="school_service_wall_south_w_collision">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_service_wall_south_w_visual">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_service_wall_south_e">
+      <static>true</static>
+      <pose>3.700 -8.200 0.625 0 0 0</pose>
+      <link name="school_service_wall_south_e_link">
+        <collision name="school_service_wall_south_e_collision">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_service_wall_south_e_visual">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_service_wall_north_w">
+      <static>true</static>
+      <pose>-3.700 11.200 0.625 0 0 0</pose>
+      <link name="school_service_wall_north_w_link">
+        <collision name="school_service_wall_north_w_collision">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_service_wall_north_w_visual">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_service_wall_north_e">
+      <static>true</static>
+      <pose>3.700 11.200 0.625 0 0 0</pose>
+      <link name="school_service_wall_north_e_link">
+        <collision name="school_service_wall_north_e_collision">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_service_wall_north_e_visual">
+          <geometry>
+            <box><size>5.200 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_library_stack_w">
+      <static>true</static>
+      <pose>-2.200 23.000 0.375 0 0 0</pose>
+      <link name="school_library_stack_w_link">
+        <collision name="school_library_stack_w_collision">
+          <geometry>
+            <box><size>1.000 5.200 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_library_stack_w_visual">
+          <geometry>
+            <box><size>1.000 5.200 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_library_stack_e">
+      <static>true</static>
+      <pose>2.200 23.000 0.375 0 0 0</pose>
+      <link name="school_library_stack_e_link">
+        <collision name="school_library_stack_e_collision">
+          <geometry>
+            <box><size>1.000 5.200 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_library_stack_e_visual">
+          <geometry>
+            <box><size>1.000 5.200 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_cafe_table_w">
+      <static>true</static>
+      <pose>-2.100 -24.000 0.275 0 0 0</pose>
+      <link name="school_cafe_table_w_link">
+        <collision name="school_cafe_table_w_collision">
+          <geometry>
+            <box><size>2.400 1.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_cafe_table_w_visual">
+          <geometry>
+            <box><size>2.400 1.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_cafe_table_e">
+      <static>true</static>
+      <pose>2.100 -22.000 0.275 0 0 0</pose>
+      <link name="school_cafe_table_e_link">
+        <collision name="school_cafe_table_e_collision">
+          <geometry>
+            <box><size>2.400 1.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_cafe_table_e_visual">
+          <geometry>
+            <box><size>2.400 1.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_teacher_desk_a">
+      <static>true</static>
+      <pose>-10.200 14.000 0.275 0 0 0</pose>
+      <link name="school_west_teacher_desk_a_link">
+        <collision name="school_west_teacher_desk_a_collision">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_teacher_desk_a_visual">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_west_teacher_desk_b">
+      <static>true</static>
+      <pose>-10.200 -6.000 0.275 0 0 0</pose>
+      <link name="school_west_teacher_desk_b_link">
+        <collision name="school_west_teacher_desk_b_collision">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_west_teacher_desk_b_visual">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_teacher_desk_a">
+      <static>true</static>
+      <pose>10.200 14.000 0.275 0 0 0</pose>
+      <link name="school_east_teacher_desk_a_link">
+        <collision name="school_east_teacher_desk_a_collision">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_teacher_desk_a_visual">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="school_east_teacher_desk_b">
+      <static>true</static>
+      <pose>10.200 -6.000 0.275 0 0 0</pose>
+      <link name="school_east_teacher_desk_b_link">
+        <collision name="school_east_teacher_desk_b_collision">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="school_east_teacher_desk_b_visual">
+          <geometry>
+            <box><size>2.800 0.900 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

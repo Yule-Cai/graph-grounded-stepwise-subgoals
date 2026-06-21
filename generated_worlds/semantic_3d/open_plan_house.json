@@ -1,0 +1,224 @@
+{
+  "map_id": "open_plan_house",
+  "label": "open-plan family house with kitchen island, living area, bathroom and bedrooms",
+  "spawn": [
+    -11.0,
+    -25.0,
+    0.35
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "open_private_wall_w",
+      "center": [
+        -9.25,
+        8.0
+      ],
+      "size": [
+        9.5,
+        0.28
+      ]
+    },
+    {
+      "name": "open_private_wall_e",
+      "center": [
+        9.25,
+        8.0
+      ],
+      "size": [
+        9.5,
+        0.28
+      ]
+    },
+    {
+      "name": "open_bedroom_split",
+      "center": [
+        0.0,
+        19.0
+      ],
+      "size": [
+        0.28,
+        22.0
+      ]
+    },
+    {
+      "name": "open_kitchen_hint_wall",
+      "center": [
+        7.8,
+        -24.0
+      ],
+      "size": [
+        0.28,
+        12.0
+      ]
+    },
+    {
+      "name": "open_sofa",
+      "center": [
+        -7.0,
+        -13.0
+      ],
+      "size": [
+        5.0,
+        1.8
+      ]
+    },
+    {
+      "name": "open_coffee_table",
+      "center": [
+        -2.5,
+        -9.5
+      ],
+      "size": [
+        2.4,
+        1.4
+      ]
+    },
+    {
+      "name": "open_dining_table",
+      "center": [
+        0.5,
+        -2.0
+      ],
+      "size": [
+        3.0,
+        1.7
+      ]
+    },
+    {
+      "name": "open_kitchen_counter",
+      "center": [
+        10.0,
+        -22.0
+      ],
+      "size": [
+        4.2,
+        1.0
+      ]
+    },
+    {
+      "name": "open_kitchen_island",
+      "center": [
+        7.2,
+        -14.5
+      ],
+      "size": [
+        2.6,
+        1.6
+      ]
+    },
+    {
+      "name": "open_bed_left",
+      "center": [
+        -9.2,
+        16.0
+      ],
+      "size": [
+        3.8,
+        4.2
+      ]
+    },
+    {
+      "name": "open_bed_right",
+      "center": [
+        8.8,
+        16.0
+      ],
+      "size": [
+        3.6,
+        4.0
+      ]
+    },
+    {
+      "name": "open_bath_fixture",
+      "center": [
+        0.0,
+        22.5
+      ],
+      "size": [
+        2.0,
+        2.6
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -3.0,
+      25.0
+    ],
+    [
+      -5.0,
+      -14.5
+    ],
+    [
+      9.5,
+      -24.0
+    ],
+    [
+      -9.5,
+      12.0
+    ],
+    [
+      8.5,
+      10.0
+    ],
+    [
+      0.0,
+      2.0
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/open_plan_house.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

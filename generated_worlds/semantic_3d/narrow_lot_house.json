@@ -1,0 +1,235 @@
+{
+  "map_id": "narrow_lot_house",
+  "label": "narrow-lot house with offset corridor, small kitchen, bathroom and bedrooms",
+  "spawn": [
+    0.0,
+    -36.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        40.0
+      ],
+      "size": [
+        18,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -40.0
+      ],
+      "size": [
+        18,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -9.0,
+        0
+      ],
+      "size": [
+        0.35,
+        80
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        9.0,
+        0
+      ],
+      "size": [
+        0.35,
+        80
+      ]
+    },
+    {
+      "name": "narrow_living_kitchen_wall_w",
+      "center": [
+        -5.7,
+        -16.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_living_kitchen_wall_e",
+      "center": [
+        5.7,
+        -16.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_kitchen_bath_wall_w",
+      "center": [
+        -5.7,
+        5.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_kitchen_bath_wall_e",
+      "center": [
+        5.7,
+        5.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_private_wall_w",
+      "center": [
+        -5.7,
+        20.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_private_wall_e",
+      "center": [
+        5.7,
+        20.0
+      ],
+      "size": [
+        6.6,
+        0.28
+      ]
+    },
+    {
+      "name": "narrow_bedroom_split",
+      "center": [
+        0.0,
+        30.0
+      ],
+      "size": [
+        0.28,
+        20.0
+      ]
+    },
+    {
+      "name": "narrow_sofa",
+      "center": [
+        -4.8,
+        -27.0
+      ],
+      "size": [
+        3.2,
+        1.5
+      ]
+    },
+    {
+      "name": "narrow_table",
+      "center": [
+        3.5,
+        -23.0
+      ],
+      "size": [
+        2.2,
+        1.2
+      ]
+    },
+    {
+      "name": "narrow_counter",
+      "center": [
+        5.5,
+        -6.0
+      ],
+      "size": [
+        3.0,
+        1.0
+      ]
+    },
+    {
+      "name": "narrow_bath_fixture",
+      "center": [
+        -5.8,
+        11.0
+      ],
+      "size": [
+        1.8,
+        2.4
+      ]
+    },
+    {
+      "name": "narrow_bed_left",
+      "center": [
+        -4.8,
+        30.0
+      ],
+      "size": [
+        3.0,
+        3.8
+      ]
+    },
+    {
+      "name": "narrow_bed_right",
+      "center": [
+        4.8,
+        30.0
+      ],
+      "size": [
+        3.0,
+        3.8
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -3.0,
+      36.0
+    ],
+    [
+      -3.0,
+      -23.0
+    ],
+    [
+      3.8,
+      -8.0
+    ],
+    [
+      -4.5,
+      13.0
+    ],
+    [
+      3.8,
+      18.0
+    ],
+    [
+      -6.2,
+      34.0
+    ]
+  ],
+  "x_bounds": [
+    -9.0,
+    9.0
+  ],
+  "y_bounds": [
+    -40.0,
+    40.0
+  ],
+  "world_path": "generated_worlds/semantic_3d/narrow_lot_house.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

@@ -1,0 +1,224 @@
+{
+  "map_id": "townhouse_long",
+  "label": "long narrow townhouse with front living room, middle kitchen and rear bedrooms",
+  "spawn": [
+    0.0,
+    -36.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        40.0
+      ],
+      "size": [
+        20,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -40.0
+      ],
+      "size": [
+        20,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -10.0,
+        0
+      ],
+      "size": [
+        0.35,
+        80
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        10.0,
+        0
+      ],
+      "size": [
+        0.35,
+        80
+      ]
+    },
+    {
+      "name": "town_living_kitchen_wall_w",
+      "center": [
+        -6.25,
+        -16.0
+      ],
+      "size": [
+        7.5,
+        0.28
+      ]
+    },
+    {
+      "name": "town_living_kitchen_wall_e",
+      "center": [
+        6.25,
+        -16.0
+      ],
+      "size": [
+        7.5,
+        0.28
+      ]
+    },
+    {
+      "name": "town_kitchen_private_wall_w",
+      "center": [
+        -6.25,
+        8.0
+      ],
+      "size": [
+        7.5,
+        0.28
+      ]
+    },
+    {
+      "name": "town_kitchen_private_wall_e",
+      "center": [
+        6.25,
+        8.0
+      ],
+      "size": [
+        7.5,
+        0.28
+      ]
+    },
+    {
+      "name": "town_bedroom_split",
+      "center": [
+        0.0,
+        30.0
+      ],
+      "size": [
+        0.28,
+        20.0
+      ]
+    },
+    {
+      "name": "town_sofa",
+      "center": [
+        -4.8,
+        -28.0
+      ],
+      "size": [
+        3.8,
+        1.6
+      ]
+    },
+    {
+      "name": "town_table",
+      "center": [
+        2.5,
+        -24.0
+      ],
+      "size": [
+        2.2,
+        1.3
+      ]
+    },
+    {
+      "name": "town_counter",
+      "center": [
+        6.0,
+        -4.0
+      ],
+      "size": [
+        3.2,
+        1.0
+      ]
+    },
+    {
+      "name": "town_island",
+      "center": [
+        0.0,
+        -2.0
+      ],
+      "size": [
+        2.2,
+        1.4
+      ]
+    },
+    {
+      "name": "town_bed_left",
+      "center": [
+        -5.2,
+        28.0
+      ],
+      "size": [
+        3.2,
+        4.0
+      ]
+    },
+    {
+      "name": "town_bed_right",
+      "center": [
+        5.2,
+        28.0
+      ],
+      "size": [
+        3.2,
+        4.0
+      ]
+    },
+    {
+      "name": "town_bath_fixture",
+      "center": [
+        6.2,
+        14.0
+      ],
+      "size": [
+        1.8,
+        2.4
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -3.0,
+      36.0
+    ],
+    [
+      0.0,
+      -25.0
+    ],
+    [
+      0.0,
+      -8.0
+    ],
+    [
+      -5.5,
+      20.0
+    ],
+    [
+      5.5,
+      20.0
+    ],
+    [
+      6.0,
+      12.0
+    ]
+  ],
+  "x_bounds": [
+    -10.0,
+    10.0
+  ],
+  "y_bounds": [
+    -40.0,
+    40.0
+  ],
+  "world_path": "generated_worlds/semantic_3d/townhouse_long.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

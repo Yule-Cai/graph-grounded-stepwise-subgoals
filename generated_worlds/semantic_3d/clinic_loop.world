@@ -1,0 +1,387 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="clinic_loop">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="clinic_loop_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_1">
+      <static>true</static>
+      <pose>-6.800 -14.000 0.625 0 0 0</pose>
+      <link name="maze_wall_1_link">
+        <collision name="maze_wall_1_collision">
+          <geometry>
+            <box><size>0.280 18.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_1_visual">
+          <geometry>
+            <box><size>0.280 18.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_2">
+      <static>true</static>
+      <pose>-1.500 -21.000 0.625 0 0 0</pose>
+      <link name="maze_wall_2_link">
+        <collision name="maze_wall_2_collision">
+          <geometry>
+            <box><size>11.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_2_visual">
+          <geometry>
+            <box><size>11.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_3">
+      <static>true</static>
+      <pose>4.200 -9.800 0.625 0 0 0</pose>
+      <link name="maze_wall_3_link">
+        <collision name="maze_wall_3_collision">
+          <geometry>
+            <box><size>0.280 19.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_3_visual">
+          <geometry>
+            <box><size>0.280 19.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_4">
+      <static>true</static>
+      <pose>-4.300 -3.000 0.625 0 0 0</pose>
+      <link name="maze_wall_4_link">
+        <collision name="maze_wall_4_collision">
+          <geometry>
+            <box><size>12.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_4_visual">
+          <geometry>
+            <box><size>12.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_5">
+      <static>true</static>
+      <pose>-10.200 4.500 0.625 0 0 0</pose>
+      <link name="maze_wall_5_link">
+        <collision name="maze_wall_5_collision">
+          <geometry>
+            <box><size>0.280 18.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_5_visual">
+          <geometry>
+            <box><size>0.280 18.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_6">
+      <static>true</static>
+      <pose>-2.000 9.500 0.625 0 0 0</pose>
+      <link name="maze_wall_6_link">
+        <collision name="maze_wall_6_collision">
+          <geometry>
+            <box><size>13.500 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_6_visual">
+          <geometry>
+            <box><size>13.500 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_7">
+      <static>true</static>
+      <pose>5.800 14.500 0.625 0 0 0</pose>
+      <link name="maze_wall_7_link">
+        <collision name="maze_wall_7_collision">
+          <geometry>
+            <box><size>0.280 15.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_7_visual">
+          <geometry>
+            <box><size>0.280 15.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_wall_8">
+      <static>true</static>
+      <pose>0.800 21.000 0.625 0 0 0</pose>
+      <link name="maze_wall_8_link">
+        <collision name="maze_wall_8_collision">
+          <geometry>
+            <box><size>10.500 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_wall_8_visual">
+          <geometry>
+            <box><size>10.500 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_bed_1">
+      <static>true</static>
+      <pose>-9.500 18.000 0.275 0 0 0</pose>
+      <link name="maze_bed_1_link">
+        <collision name="maze_bed_1_collision">
+          <geometry>
+            <box><size>3.200 2.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_bed_1_visual">
+          <geometry>
+            <box><size>3.200 2.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_bed_2">
+      <static>true</static>
+      <pose>-9.500 12.800 0.275 0 0 0</pose>
+      <link name="maze_bed_2_link">
+        <collision name="maze_bed_2_collision">
+          <geometry>
+            <box><size>3.200 2.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_bed_2_visual">
+          <geometry>
+            <box><size>3.200 2.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_exam_bed_a">
+      <static>true</static>
+      <pose>8.800 15.800 0.275 0 0 0</pose>
+      <link name="maze_exam_bed_a_link">
+        <collision name="maze_exam_bed_a_collision">
+          <geometry>
+            <box><size>3.000 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_exam_bed_a_visual">
+          <geometry>
+            <box><size>3.000 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_exam_bed_b">
+      <static>true</static>
+      <pose>8.800 21.000 0.275 0 0 0</pose>
+      <link name="maze_exam_bed_b_link">
+        <collision name="maze_exam_bed_b_collision">
+          <geometry>
+            <box><size>3.000 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_exam_bed_b_visual">
+          <geometry>
+            <box><size>3.000 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_counter">
+      <static>true</static>
+      <pose>7.800 -16.500 0.275 0 0 0</pose>
+      <link name="maze_counter_link">
+        <collision name="maze_counter_collision">
+          <geometry>
+            <box><size>4.200 2.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_counter_visual">
+          <geometry>
+            <box><size>4.200 2.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_waiting_chair_a">
+      <static>true</static>
+      <pose>-8.800 -23.500 0.375 0 0 0</pose>
+      <link name="maze_waiting_chair_a_link">
+        <collision name="maze_waiting_chair_a_collision">
+          <geometry>
+            <box><size>1.100 1.100 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_waiting_chair_a_visual">
+          <geometry>
+            <box><size>1.100 1.100 0.750</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_waiting_chair_b">
+      <static>true</static>
+      <pose>-6.400 -23.500 0.375 0 0 0</pose>
+      <link name="maze_waiting_chair_b_link">
+        <collision name="maze_waiting_chair_b_collision">
+          <geometry>
+            <box><size>1.100 1.100 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_waiting_chair_b_visual">
+          <geometry>
+            <box><size>1.100 1.100 0.750</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_pharmacy_shelf_a">
+      <static>true</static>
+      <pose>9.800 -13.000 0.550 0 0 0</pose>
+      <link name="maze_pharmacy_shelf_a_link">
+        <collision name="maze_pharmacy_shelf_a_collision">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_pharmacy_shelf_a_visual">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="maze_pharmacy_shelf_b">
+      <static>true</static>
+      <pose>6.200 -20.000 0.550 0 0 0</pose>
+      <link name="maze_pharmacy_shelf_b_link">
+        <collision name="maze_pharmacy_shelf_b_collision">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="maze_pharmacy_shelf_b_visual">
+          <geometry>
+            <box><size>1.000 5.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

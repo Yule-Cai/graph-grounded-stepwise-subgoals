@@ -1,0 +1,455 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="suburban_villa">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="suburban_villa_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>44.000 80.000 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>44.000 80.000 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 40.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -40.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>44.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-22.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 80.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 80.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>22.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 80.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 80.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_public_private_wall_w">
+      <static>true</static>
+      <pose>-12.000 4.000 0.625 0 0 0</pose>
+      <link name="home_public_private_wall_w_link">
+        <collision name="home_public_private_wall_w_collision">
+          <geometry>
+            <box><size>13.600 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_public_private_wall_w_visual">
+          <geometry>
+            <box><size>13.600 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_public_private_wall_e">
+      <static>true</static>
+      <pose>12.000 4.000 0.625 0 0 0</pose>
+      <link name="home_public_private_wall_e_link">
+        <collision name="home_public_private_wall_e_collision">
+          <geometry>
+            <box><size>13.600 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_public_private_wall_e_visual">
+          <geometry>
+            <box><size>13.600 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_left_private_wall">
+      <static>true</static>
+      <pose>-5.400 21.500 0.625 0 0 0</pose>
+      <link name="home_left_private_wall_link">
+        <collision name="home_left_private_wall_collision">
+          <geometry>
+            <box><size>0.280 29.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_left_private_wall_visual">
+          <geometry>
+            <box><size>0.280 29.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_right_private_wall">
+      <static>true</static>
+      <pose>5.400 21.500 0.625 0 0 0</pose>
+      <link name="home_right_private_wall_link">
+        <collision name="home_right_private_wall_collision">
+          <geometry>
+            <box><size>0.280 29.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_right_private_wall_visual">
+          <geometry>
+            <box><size>0.280 29.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_kitchen_side_wall">
+      <static>true</static>
+      <pose>7.400 -24.000 0.625 0 0 0</pose>
+      <link name="home_kitchen_side_wall_link">
+        <collision name="home_kitchen_side_wall_collision">
+          <geometry>
+            <box><size>0.280 24.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_kitchen_side_wall_visual">
+          <geometry>
+            <box><size>0.280 24.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_kitchen_dining_wall_w">
+      <static>true</static>
+      <pose>-11.400 -9.500 0.625 0 0 0</pose>
+      <link name="home_kitchen_dining_wall_w_link">
+        <collision name="home_kitchen_dining_wall_w_collision">
+          <geometry>
+            <box><size>14.800 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_kitchen_dining_wall_w_visual">
+          <geometry>
+            <box><size>14.800 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_kitchen_dining_wall_e">
+      <static>true</static>
+      <pose>11.400 -9.500 0.625 0 0 0</pose>
+      <link name="home_kitchen_dining_wall_e_link">
+        <collision name="home_kitchen_dining_wall_e_collision">
+          <geometry>
+            <box><size>14.800 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_kitchen_dining_wall_e_visual">
+          <geometry>
+            <box><size>14.800 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_bath_wall_w">
+      <static>true</static>
+      <pose>-12.100 17.000 0.625 0 0 0</pose>
+      <link name="home_bath_wall_w_link">
+        <collision name="home_bath_wall_w_collision">
+          <geometry>
+            <box><size>13.400 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_bath_wall_w_visual">
+          <geometry>
+            <box><size>13.400 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="home_bath_wall_e">
+      <static>true</static>
+      <pose>12.100 17.000 0.625 0 0 0</pose>
+      <link name="home_bath_wall_e_link">
+        <collision name="home_bath_wall_e_collision">
+          <geometry>
+            <box><size>13.400 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="home_bath_wall_e_visual">
+          <geometry>
+            <box><size>13.400 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_sofa">
+      <static>true</static>
+      <pose>-8.400 -17.500 0.275 0 0 0</pose>
+      <link name="villa_sofa_link">
+        <collision name="villa_sofa_collision">
+          <geometry>
+            <box><size>5.280 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_sofa_visual">
+          <geometry>
+            <box><size>5.280 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_coffee_table">
+      <static>true</static>
+      <pose>-2.400 -13.000 0.275 0 0 0</pose>
+      <link name="villa_coffee_table_link">
+        <collision name="villa_coffee_table_collision">
+          <geometry>
+            <box><size>2.200 1.300 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_coffee_table_visual">
+          <geometry>
+            <box><size>2.200 1.300 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_dining_table">
+      <static>true</static>
+      <pose>0.000 -3.000 0.275 0 0 0</pose>
+      <link name="villa_dining_table_link">
+        <collision name="villa_dining_table_collision">
+          <geometry>
+            <box><size>2.800 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_dining_table_visual">
+          <geometry>
+            <box><size>2.800 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_kitchen_counter">
+      <static>true</static>
+      <pose>11.760 -21.000 0.275 0 0 0</pose>
+      <link name="villa_kitchen_counter_link">
+        <collision name="villa_kitchen_counter_collision">
+          <geometry>
+            <box><size>4.000 1.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_kitchen_counter_visual">
+          <geometry>
+            <box><size>4.000 1.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_kitchen_island">
+      <static>true</static>
+      <pose>9.600 -15.000 0.375 0 0 0</pose>
+      <link name="villa_kitchen_island_link">
+        <collision name="villa_kitchen_island_collision">
+          <geometry>
+            <box><size>2.300 1.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_kitchen_island_visual">
+          <geometry>
+            <box><size>2.300 1.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_bed_left">
+      <static>true</static>
+      <pose>-11.400 12.000 0.275 0 0 0</pose>
+      <link name="villa_bed_left_link">
+        <collision name="villa_bed_left_collision">
+          <geometry>
+            <box><size>3.800 4.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_bed_left_visual">
+          <geometry>
+            <box><size>3.800 4.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_bed_right">
+      <static>true</static>
+      <pose>10.800 12.000 0.275 0 0 0</pose>
+      <link name="villa_bed_right_link">
+        <collision name="villa_bed_right_collision">
+          <geometry>
+            <box><size>3.600 4.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_bed_right_visual">
+          <geometry>
+            <box><size>3.600 4.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_bath_fixture">
+      <static>true</static>
+      <pose>0.000 22.500 0.375 0 0 0</pose>
+      <link name="villa_bath_fixture_link">
+        <collision name="villa_bath_fixture_collision">
+          <geometry>
+            <box><size>2.100 2.600 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_bath_fixture_visual">
+          <geometry>
+            <box><size>2.100 2.600 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_fragile_object">
+      <static>true</static>
+      <pose>-3.000 -6.500 0.375 0 0 0</pose>
+      <link name="villa_fragile_object_link">
+        <collision name="villa_fragile_object_collision">
+          <geometry>
+            <box><size>1.000 1.000 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_fragile_object_visual">
+          <geometry>
+            <box><size>1.000 1.000 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_grand_stair_low_core">
+      <static>true</static>
+      <pose>0.000 2.000 0.625 0 0 0</pose>
+      <link name="villa_grand_stair_low_core_link">
+        <collision name="villa_grand_stair_low_core_collision">
+          <geometry>
+            <box><size>4.500 8.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_grand_stair_low_core_visual">
+          <geometry>
+            <box><size>4.500 8.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_foyer_partition_w">
+      <static>true</static>
+      <pose>-14.000 -28.000 0.625 0 0 0</pose>
+      <link name="villa_foyer_partition_w_link">
+        <collision name="villa_foyer_partition_w_collision">
+          <geometry>
+            <box><size>16.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_foyer_partition_w_visual">
+          <geometry>
+            <box><size>16.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="villa_foyer_partition_e">
+      <static>true</static>
+      <pose>14.000 -28.000 0.625 0 0 0</pose>
+      <link name="villa_foyer_partition_e_link">
+        <collision name="villa_foyer_partition_e_collision">
+          <geometry>
+            <box><size>16.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="villa_foyer_partition_e_visual">
+          <geometry>
+            <box><size>16.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

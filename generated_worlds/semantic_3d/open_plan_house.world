@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="open_plan_house">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="open_plan_house_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_private_wall_w">
+      <static>true</static>
+      <pose>-9.250 8.000 0.625 0 0 0</pose>
+      <link name="open_private_wall_w_link">
+        <collision name="open_private_wall_w_collision">
+          <geometry>
+            <box><size>9.500 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_private_wall_w_visual">
+          <geometry>
+            <box><size>9.500 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_private_wall_e">
+      <static>true</static>
+      <pose>9.250 8.000 0.625 0 0 0</pose>
+      <link name="open_private_wall_e_link">
+        <collision name="open_private_wall_e_collision">
+          <geometry>
+            <box><size>9.500 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_private_wall_e_visual">
+          <geometry>
+            <box><size>9.500 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_bedroom_split">
+      <static>true</static>
+      <pose>0.000 19.000 0.275 0 0 0</pose>
+      <link name="open_bedroom_split_link">
+        <collision name="open_bedroom_split_collision">
+          <geometry>
+            <box><size>0.280 22.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_bedroom_split_visual">
+          <geometry>
+            <box><size>0.280 22.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_kitchen_hint_wall">
+      <static>true</static>
+      <pose>7.800 -24.000 0.625 0 0 0</pose>
+      <link name="open_kitchen_hint_wall_link">
+        <collision name="open_kitchen_hint_wall_collision">
+          <geometry>
+            <box><size>0.280 12.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_kitchen_hint_wall_visual">
+          <geometry>
+            <box><size>0.280 12.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_sofa">
+      <static>true</static>
+      <pose>-7.000 -13.000 0.275 0 0 0</pose>
+      <link name="open_sofa_link">
+        <collision name="open_sofa_collision">
+          <geometry>
+            <box><size>5.000 1.800 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_sofa_visual">
+          <geometry>
+            <box><size>5.000 1.800 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_coffee_table">
+      <static>true</static>
+      <pose>-2.500 -9.500 0.275 0 0 0</pose>
+      <link name="open_coffee_table_link">
+        <collision name="open_coffee_table_collision">
+          <geometry>
+            <box><size>2.400 1.400 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_coffee_table_visual">
+          <geometry>
+            <box><size>2.400 1.400 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_dining_table">
+      <static>true</static>
+      <pose>0.500 -2.000 0.275 0 0 0</pose>
+      <link name="open_dining_table_link">
+        <collision name="open_dining_table_collision">
+          <geometry>
+            <box><size>3.000 1.700 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_dining_table_visual">
+          <geometry>
+            <box><size>3.000 1.700 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_kitchen_counter">
+      <static>true</static>
+      <pose>10.000 -22.000 0.275 0 0 0</pose>
+      <link name="open_kitchen_counter_link">
+        <collision name="open_kitchen_counter_collision">
+          <geometry>
+            <box><size>4.200 1.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_kitchen_counter_visual">
+          <geometry>
+            <box><size>4.200 1.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_kitchen_island">
+      <static>true</static>
+      <pose>7.200 -14.500 0.375 0 0 0</pose>
+      <link name="open_kitchen_island_link">
+        <collision name="open_kitchen_island_collision">
+          <geometry>
+            <box><size>2.600 1.600 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_kitchen_island_visual">
+          <geometry>
+            <box><size>2.600 1.600 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_bed_left">
+      <static>true</static>
+      <pose>-9.200 16.000 0.275 0 0 0</pose>
+      <link name="open_bed_left_link">
+        <collision name="open_bed_left_collision">
+          <geometry>
+            <box><size>3.800 4.200 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_bed_left_visual">
+          <geometry>
+            <box><size>3.800 4.200 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_bed_right">
+      <static>true</static>
+      <pose>8.800 16.000 0.275 0 0 0</pose>
+      <link name="open_bed_right_link">
+        <collision name="open_bed_right_collision">
+          <geometry>
+            <box><size>3.600 4.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_bed_right_visual">
+          <geometry>
+            <box><size>3.600 4.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.55 0.65 0.72 1</ambient><diffuse>0.55 0.65 0.72 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="open_bath_fixture">
+      <static>true</static>
+      <pose>0.000 22.500 0.375 0 0 0</pose>
+      <link name="open_bath_fixture_link">
+        <collision name="open_bath_fixture_collision">
+          <geometry>
+            <box><size>2.000 2.600 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="open_bath_fixture_visual">
+          <geometry>
+            <box><size>2.000 2.600 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

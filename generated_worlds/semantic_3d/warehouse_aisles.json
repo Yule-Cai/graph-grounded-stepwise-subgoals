@@ -1,0 +1,253 @@
+{
+  "map_id": "warehouse_aisles",
+  "label": "warehouse aisles",
+  "spawn": [
+    -11.5,
+    -25.0,
+    0.2
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-9_a",
+      "center": [
+        -9,
+        -8
+      ],
+      "size": [
+        1.2,
+        24
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-9_b",
+      "center": [
+        -9,
+        13
+      ],
+      "size": [
+        1.2,
+        13
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-5_a",
+      "center": [
+        -5,
+        -8
+      ],
+      "size": [
+        1.2,
+        24
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-5_b",
+      "center": [
+        -5,
+        13
+      ],
+      "size": [
+        1.2,
+        13
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-1_a",
+      "center": [
+        -1,
+        -8
+      ],
+      "size": [
+        1.2,
+        24
+      ]
+    },
+    {
+      "name": "warehouse_shelf_-1_b",
+      "center": [
+        -1,
+        13
+      ],
+      "size": [
+        1.2,
+        13
+      ]
+    },
+    {
+      "name": "warehouse_shelf_3_a",
+      "center": [
+        3,
+        -8
+      ],
+      "size": [
+        1.2,
+        24
+      ]
+    },
+    {
+      "name": "warehouse_shelf_3_b",
+      "center": [
+        3,
+        13
+      ],
+      "size": [
+        1.2,
+        13
+      ]
+    },
+    {
+      "name": "warehouse_shelf_7_a",
+      "center": [
+        7,
+        -8
+      ],
+      "size": [
+        1.2,
+        24
+      ]
+    },
+    {
+      "name": "warehouse_shelf_7_b",
+      "center": [
+        7,
+        13
+      ],
+      "size": [
+        1.2,
+        13
+      ]
+    },
+    {
+      "name": "warehouse_loading_counter",
+      "center": [
+        0,
+        -26.2
+      ],
+      "size": [
+        10.0,
+        1.0
+      ]
+    },
+    {
+      "name": "warehouse_pallet_stack_a",
+      "center": [
+        -11.3,
+        20.0
+      ],
+      "size": [
+        2.0,
+        3.5
+      ]
+    },
+    {
+      "name": "warehouse_pallet_stack_b",
+      "center": [
+        10.8,
+        13.0
+      ],
+      "size": [
+        2.0,
+        3.5
+      ]
+    },
+    {
+      "name": "warehouse_forklift_body",
+      "center": [
+        5.5,
+        -24.0
+      ],
+      "size": [
+        2.2,
+        1.6
+      ]
+    },
+    {
+      "name": "warehouse_hazmat_cage_wall",
+      "center": [
+        9.5,
+        21.0
+      ],
+      "size": [
+        5.0,
+        0.28
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -10,
+      24
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      10,
+      22
+    ],
+    [
+      0.3,
+      3.9
+    ],
+    [
+      8.5,
+      -23.5
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/warehouse_aisles.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

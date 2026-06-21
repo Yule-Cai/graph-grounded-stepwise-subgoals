@@ -1,0 +1,710 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="tb3_house">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="tb3_house_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>49.000 35.000 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>49.000 35.000 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_101_Wall_101_Collision">
+      <static>true</static>
+      <pose>-0.150 9.300 0.625 0 0 0</pose>
+      <link name="Wall_101_Wall_101_Collision_link">
+        <collision name="Wall_101_Wall_101_Collision_collision">
+          <geometry>
+            <box><size>0.450 13.500 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_101_Wall_101_Collision_visual">
+          <geometry>
+            <box><size>0.450 13.500 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_104_Wall_104_Collision_1">
+      <static>true</static>
+      <pose>6.900 15.649 0.625 0 0 0</pose>
+      <link name="Wall_104_Wall_104_Collision_1_link">
+        <collision name="Wall_104_Wall_104_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 0.803 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_104_Wall_104_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 0.803 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_104_Wall_104_Collision_0">
+      <static>true</static>
+      <pose>6.900 7.549 0.625 0 0 0</pose>
+      <link name="Wall_104_Wall_104_Collision_0_link">
+        <collision name="Wall_104_Wall_104_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 9.998 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_104_Wall_104_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 9.998 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_106_Wall_106_Collision_1">
+      <static>true</static>
+      <pose>21.367 -0.525 0.625 0 0 0</pose>
+      <link name="Wall_106_Wall_106_Collision_1_link">
+        <collision name="Wall_106_Wall_106_Collision_1_collision">
+          <geometry>
+            <box><size>2.717 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_106_Wall_106_Collision_1_visual">
+          <geometry>
+            <box><size>2.717 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_106_Wall_106_Collision_0">
+      <static>true</static>
+      <pose>15.892 -0.525 0.625 0 0 0</pose>
+      <link name="Wall_106_Wall_106_Collision_0_link">
+        <collision name="Wall_106_Wall_106_Collision_0_collision">
+          <geometry>
+            <box><size>2.833 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_106_Wall_106_Collision_0_visual">
+          <geometry>
+            <box><size>2.833 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_108_Wall_108_Collision_1">
+      <static>true</static>
+      <pose>5.906 -0.525 0.625 0 0 0</pose>
+      <link name="Wall_108_Wall_108_Collision_1_link">
+        <collision name="Wall_108_Wall_108_Collision_1_collision">
+          <geometry>
+            <box><size>2.438 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_108_Wall_108_Collision_1_visual">
+          <geometry>
+            <box><size>2.438 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_108_Wall_108_Collision_0">
+      <static>true</static>
+      <pose>-6.694 -0.525 0.625 0 0 0</pose>
+      <link name="Wall_108_Wall_108_Collision_0_link">
+        <collision name="Wall_108_Wall_108_Collision_0_collision">
+          <geometry>
+            <box><size>17.362 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_108_Wall_108_Collision_0_visual">
+          <geometry>
+            <box><size>17.362 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_81_Wall_81_Collision">
+      <static>true</static>
+      <pose>15.233 15.806 0.625 0 0 0</pose>
+      <link name="Wall_81_Wall_81_Collision_link">
+        <collision name="Wall_81_Wall_81_Collision_collision">
+          <geometry>
+            <box><size>15.000 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_81_Wall_81_Collision_visual">
+          <geometry>
+            <box><size>15.000 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_82_Wall_82_Collision">
+      <static>true</static>
+      <pose>3.750 15.806 0.625 0 0 0</pose>
+      <link name="Wall_82_Wall_82_Collision_link">
+        <collision name="Wall_82_Wall_82_Collision_collision">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_82_Wall_82_Collision_visual">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_83_Wall_83_Collision_2">
+      <static>true</static>
+      <pose>-7.756 15.825 0.625 0 0 0</pose>
+      <link name="Wall_83_Wall_83_Collision_2_link">
+        <collision name="Wall_83_Wall_83_Collision_2_collision">
+          <geometry>
+            <box><size>1.112 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_83_Wall_83_Collision_2_visual">
+          <geometry>
+            <box><size>1.112 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_83_Wall_83_Collision_0">
+      <static>true</static>
+      <pose>-0.168 15.825 0.625 0 0 0</pose>
+      <link name="Wall_83_Wall_83_Collision_0_link">
+        <collision name="Wall_83_Wall_83_Collision_0_collision">
+          <geometry>
+            <box><size>0.486 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_83_Wall_83_Collision_0_visual">
+          <geometry>
+            <box><size>0.486 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_83_Wall_83_Collision_1">
+      <static>true</static>
+      <pose>-7.668 15.825 0.625 0 0 0</pose>
+      <link name="Wall_83_Wall_83_Collision_1_link">
+        <collision name="Wall_83_Wall_83_Collision_1_collision">
+          <geometry>
+            <box><size>14.514 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_83_Wall_83_Collision_1_visual">
+          <geometry>
+            <box><size>14.514 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_83_Wall_83_Collision_3">
+      <static>true</static>
+      <pose>-7.756 15.825 0.625 0 0 0</pose>
+      <link name="Wall_83_Wall_83_Collision_3_link">
+        <collision name="Wall_83_Wall_83_Collision_3_collision">
+          <geometry>
+            <box><size>1.112 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_83_Wall_83_Collision_3_visual">
+          <geometry>
+            <box><size>1.112 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_84_Wall_84_Collision">
+      <static>true</static>
+      <pose>-18.600 15.825 0.625 0 0 0</pose>
+      <link name="Wall_84_Wall_84_Collision_link">
+        <collision name="Wall_84_Wall_84_Collision_collision">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_84_Wall_84_Collision_visual">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_85_Wall_85_Collision_2">
+      <static>true</static>
+      <pose>-22.500 3.993 0.625 0 0 0</pose>
+      <link name="Wall_85_Wall_85_Collision_2_link">
+        <collision name="Wall_85_Wall_85_Collision_2_collision">
+          <geometry>
+            <box><size>0.450 2.886 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_85_Wall_85_Collision_2_visual">
+          <geometry>
+            <box><size>0.450 2.886 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_85_Wall_85_Collision_1">
+      <static>true</static>
+      <pose>-22.500 5.991 0.625 0 0 0</pose>
+      <link name="Wall_85_Wall_85_Collision_1_link">
+        <collision name="Wall_85_Wall_85_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 6.882 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_85_Wall_85_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 6.882 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_85_Wall_85_Collision_0">
+      <static>true</static>
+      <pose>-22.500 12.741 0.625 0 0 0</pose>
+      <link name="Wall_85_Wall_85_Collision_0_link">
+        <collision name="Wall_85_Wall_85_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 6.618 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_85_Wall_85_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 6.618 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_86_Wall_86_Collision_2">
+      <static>true</static>
+      <pose>-22.500 -4.656 0.625 0 0 0</pose>
+      <link name="Wall_86_Wall_86_Collision_2_link">
+        <collision name="Wall_86_Wall_86_Collision_2_collision">
+          <geometry>
+            <box><size>0.450 3.425 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_86_Wall_86_Collision_2_visual">
+          <geometry>
+            <box><size>0.450 3.425 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_86_Wall_86_Collision_1">
+      <static>true</static>
+      <pose>-22.500 -5.354 0.625 0 0 0</pose>
+      <link name="Wall_86_Wall_86_Collision_1_link">
+        <collision name="Wall_86_Wall_86_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 13.292 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_86_Wall_86_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 13.292 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_86_Wall_86_Collision_3">
+      <static>true</static>
+      <pose>-22.500 -10.983 0.625 0 0 0</pose>
+      <link name="Wall_86_Wall_86_Collision_3_link">
+        <collision name="Wall_86_Wall_86_Collision_3_collision">
+          <geometry>
+            <box><size>0.450 2.034 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_86_Wall_86_Collision_3_visual">
+          <geometry>
+            <box><size>0.450 2.034 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_86_Wall_86_Collision_0">
+      <static>true</static>
+      <pose>-22.500 2.146 0.625 0 0 0</pose>
+      <link name="Wall_86_Wall_86_Collision_0_link">
+        <collision name="Wall_86_Wall_86_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 1.708 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_86_Wall_86_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 1.708 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_87_Wall_87_Collision">
+      <static>true</static>
+      <pose>-18.975 -11.775 0.625 0 0 0</pose>
+      <link name="Wall_87_Wall_87_Collision_link">
+        <collision name="Wall_87_Wall_87_Collision_collision">
+          <geometry>
+            <box><size>7.500 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_87_Wall_87_Collision_visual">
+          <geometry>
+            <box><size>7.500 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_88_Wall_88_Collision">
+      <static>true</static>
+      <pose>-15.455 -4.489 0.625 0 0 0</pose>
+      <link name="Wall_88_Wall_88_Collision_link">
+        <collision name="Wall_88_Wall_88_Collision_collision">
+          <geometry>
+            <box><size>0.450 15.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_88_Wall_88_Collision_visual">
+          <geometry>
+            <box><size>0.450 15.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_90_Wall_90_Collision">
+      <static>true</static>
+      <pose>3.375 2.775 0.625 0 0 0</pose>
+      <link name="Wall_90_Wall_90_Collision_link">
+        <collision name="Wall_90_Wall_90_Collision_collision">
+          <geometry>
+            <box><size>7.500 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_90_Wall_90_Collision_visual">
+          <geometry>
+            <box><size>7.500 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_91_Wall_91_Collision_0">
+      <static>true</static>
+      <pose>6.900 2.780 0.625 0 0 0</pose>
+      <link name="Wall_91_Wall_91_Collision_0_link">
+        <collision name="Wall_91_Wall_91_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 0.441 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_91_Wall_91_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 0.441 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_91_Wall_91_Collision_1">
+      <static>true</static>
+      <pose>6.900 -0.445 0.625 0 0 0</pose>
+      <link name="Wall_91_Wall_91_Collision_1_link">
+        <collision name="Wall_91_Wall_91_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 0.609 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_91_Wall_91_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 0.609 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_92_Wall_92_Collision">
+      <static>true</static>
+      <pose>10.800 -0.525 0.625 0 0 0</pose>
+      <link name="Wall_92_Wall_92_Collision_link">
+        <collision name="Wall_92_Wall_92_Collision_collision">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_92_Wall_92_Collision_visual">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_93_Wall_93_Collision">
+      <static>true</static>
+      <pose>14.700 -8.175 0.625 0 0 0</pose>
+      <link name="Wall_93_Wall_93_Collision_link">
+        <collision name="Wall_93_Wall_93_Collision_collision">
+          <geometry>
+            <box><size>0.450 15.750 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_93_Wall_93_Collision_visual">
+          <geometry>
+            <box><size>0.450 15.750 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_94_Wall_94_Collision">
+      <static>true</static>
+      <pose>18.600 -15.825 0.625 0 0 0</pose>
+      <link name="Wall_94_Wall_94_Collision_link">
+        <collision name="Wall_94_Wall_94_Collision_collision">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_94_Wall_94_Collision_visual">
+          <geometry>
+            <box><size>8.250 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_95_Wall_95_Collision_2">
+      <static>true</static>
+      <pose>22.500 -8.286 0.625 0 0 0</pose>
+      <link name="Wall_95_Wall_95_Collision_2_link">
+        <collision name="Wall_95_Wall_95_Collision_2_collision">
+          <geometry>
+            <box><size>0.450 3.826 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_95_Wall_95_Collision_2_visual">
+          <geometry>
+            <box><size>0.450 3.826 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_95_Wall_95_Collision_3">
+      <static>true</static>
+      <pose>22.500 -0.862 0.625 0 0 0</pose>
+      <link name="Wall_95_Wall_95_Collision_3_link">
+        <collision name="Wall_95_Wall_95_Collision_3_collision">
+          <geometry>
+            <box><size>0.450 1.123 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_95_Wall_95_Collision_3_visual">
+          <geometry>
+            <box><size>0.450 1.123 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_95_Wall_95_Collision_0">
+      <static>true</static>
+      <pose>22.500 -15.163 0.625 0 0 0</pose>
+      <link name="Wall_95_Wall_95_Collision_0_link">
+        <collision name="Wall_95_Wall_95_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 1.774 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_95_Wall_95_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 1.774 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_95_Wall_95_Collision_1">
+      <static>true</static>
+      <pose>22.500 -7.288 0.625 0 0 0</pose>
+      <link name="Wall_95_Wall_95_Collision_1_link">
+        <collision name="Wall_95_Wall_95_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 13.976 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_95_Wall_95_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 13.976 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_96_Wall_96_Collision_2">
+      <static>true</static>
+      <pose>22.500 13.708 0.625 0 0 0</pose>
+      <link name="Wall_96_Wall_96_Collision_2_link">
+        <collision name="Wall_96_Wall_96_Collision_2_collision">
+          <geometry>
+            <box><size>0.450 4.085 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_96_Wall_96_Collision_2_visual">
+          <geometry>
+            <box><size>0.450 4.085 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_96_Wall_96_Collision_0">
+      <static>true</static>
+      <pose>22.500 1.505 0.625 0 0 0</pose>
+      <link name="Wall_96_Wall_96_Collision_0_link">
+        <collision name="Wall_96_Wall_96_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 4.510 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_96_Wall_96_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 4.510 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_96_Wall_96_Collision_1">
+      <static>true</static>
+      <pose>22.500 9.755 0.625 0 0 0</pose>
+      <link name="Wall_96_Wall_96_Collision_1_link">
+        <collision name="Wall_96_Wall_96_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 11.990 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_96_Wall_96_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 11.990 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_98_Wall_98_Collision_0">
+      <static>true</static>
+      <pose>-21.501 2.775 0.625 0 0 0</pose>
+      <link name="Wall_98_Wall_98_Collision_0_link">
+        <collision name="Wall_98_Wall_98_Collision_0_collision">
+          <geometry>
+            <box><size>2.447 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_98_Wall_98_Collision_0_visual">
+          <geometry>
+            <box><size>2.447 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_98_Wall_98_Collision_1">
+      <static>true</static>
+      <pose>-16.401 2.775 0.625 0 0 0</pose>
+      <link name="Wall_98_Wall_98_Collision_1_link">
+        <collision name="Wall_98_Wall_98_Collision_1_collision">
+          <geometry>
+            <box><size>2.353 0.450 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_98_Wall_98_Collision_1_visual">
+          <geometry>
+            <box><size>2.353 0.450 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_99_Wall_99_Collision_0">
+      <static>true</static>
+      <pose>-15.450 4.437 0.625 0 0 0</pose>
+      <link name="Wall_99_Wall_99_Collision_0_link">
+        <collision name="Wall_99_Wall_99_Collision_0_collision">
+          <geometry>
+            <box><size>0.450 3.773 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_99_Wall_99_Collision_0_visual">
+          <geometry>
+            <box><size>0.450 3.773 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="Wall_99_Wall_99_Collision_1">
+      <static>true</static>
+      <pose>-15.450 14.811 0.625 0 0 0</pose>
+      <link name="Wall_99_Wall_99_Collision_1_link">
+        <collision name="Wall_99_Wall_99_Collision_1_collision">
+          <geometry>
+            <box><size>0.450 2.478 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="Wall_99_Wall_99_Collision_1_visual">
+          <geometry>
+            <box><size>0.450 2.478 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

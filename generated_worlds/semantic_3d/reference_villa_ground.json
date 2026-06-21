@@ -1,0 +1,894 @@
+{
+  "map_id": "reference_villa_ground",
+  "label": "villa ground floor with foyer, living room, dining room, kitchen, laundry, elder bedroom, bathrooms, craft room and stairs",
+  "spawn": [
+    13.0,
+    -22.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "villa_outer_north_left",
+      "center": [
+        -15.1,
+        22.5
+      ],
+      "size": [
+        11.8,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_north_right",
+      "center": [
+        13.1,
+        22.5
+      ],
+      "size": [
+        15.8,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_west_upper",
+      "center": [
+        -21.0,
+        3.6500000000000004
+      ],
+      "size": [
+        0.28,
+        37.7
+      ]
+    },
+    {
+      "name": "villa_outer_left_bottom",
+      "center": [
+        -16.6,
+        -15.2
+      ],
+      "size": [
+        8.8,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_balcony_west",
+      "center": [
+        -12.2,
+        -18.35
+      ],
+      "size": [
+        0.28,
+        6.300000000000001
+      ]
+    },
+    {
+      "name": "villa_outer_balcony_south",
+      "center": [
+        -7.8999999999999995,
+        -21.5
+      ],
+      "size": [
+        8.6,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_balcony_east",
+      "center": [
+        -3.6,
+        -20.4
+      ],
+      "size": [
+        0.28,
+        7.199999999999999
+      ]
+    },
+    {
+      "name": "villa_outer_hall_south",
+      "center": [
+        3.3,
+        -24.0
+      ],
+      "size": [
+        13.799999999999999,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_foyer_west",
+      "center": [
+        10.2,
+        -20.5
+      ],
+      "size": [
+        0.28,
+        7.0
+      ]
+    },
+    {
+      "name": "villa_outer_foyer_south",
+      "center": [
+        15.6,
+        -24.0
+      ],
+      "size": [
+        10.8,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_outer_east",
+      "center": [
+        21.0,
+        -0.75
+      ],
+      "size": [
+        0.28,
+        46.5
+      ]
+    },
+    {
+      "name": "villa_exterior_void_sw",
+      "center": [
+        -16.6,
+        -19.6
+      ],
+      "size": [
+        8.8,
+        8.8
+      ]
+    },
+    {
+      "name": "villa_exterior_void_s_center",
+      "center": [
+        -7.9,
+        -22.75
+      ],
+      "size": [
+        8.6,
+        2.5
+      ]
+    },
+    {
+      "name": "villa_exterior_void_top_center",
+      "center": [
+        0.0,
+        18.05
+      ],
+      "size": [
+        10.4,
+        8.9
+      ]
+    },
+    {
+      "name": "villa_laundry_bottom_wall_w",
+      "center": [
+        -19.1,
+        13.6
+      ],
+      "size": [
+        3.8000000000000007,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_laundry_bottom_wall_e",
+      "center": [
+        -11.5,
+        13.6
+      ],
+      "size": [
+        4.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_laundry_right_wall_s",
+      "center": [
+        -9.2,
+        15.2
+      ],
+      "size": [
+        0.28,
+        3.200000000000001
+      ]
+    },
+    {
+      "name": "villa_laundry_right_wall_n",
+      "center": [
+        -9.2,
+        21.15
+      ],
+      "size": [
+        0.28,
+        2.6999999999999993
+      ]
+    },
+    {
+      "name": "villa_kitchen_bottom_wall_w",
+      "center": [
+        6.800000000000001,
+        13.6
+      ],
+      "size": [
+        3.2,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_kitchen_bottom_wall_e",
+      "center": [
+        17.1,
+        13.6
+      ],
+      "size": [
+        7.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_kitchen_left_wall",
+      "center": [
+        5.2,
+        18.05
+      ],
+      "size": [
+        0.28,
+        8.9
+      ]
+    },
+    {
+      "name": "villa_hall_left_wall_s",
+      "center": [
+        -3.6,
+        -19.7
+      ],
+      "size": [
+        0.28,
+        8.6
+      ]
+    },
+    {
+      "name": "villa_hall_left_wall_m",
+      "center": [
+        -3.6,
+        -6.800000000000001
+      ],
+      "size": [
+        0.28,
+        7.2
+      ]
+    },
+    {
+      "name": "villa_hall_left_wall_n_lower",
+      "center": [
+        -3.6,
+        5.8
+      ],
+      "size": [
+        0.28,
+        2.0
+      ]
+    },
+    {
+      "name": "villa_hall_left_wall_n_upper",
+      "center": [
+        -3.6,
+        16.35
+      ],
+      "size": [
+        0.28,
+        12.3
+      ]
+    },
+    {
+      "name": "villa_craft_bottom_wall_w",
+      "center": [
+        -18.6,
+        4.0
+      ],
+      "size": [
+        4.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_craft_bottom_wall_e",
+      "center": [
+        -8.0,
+        4.0
+      ],
+      "size": [
+        8.8,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_craft_top_wall_w",
+      "center": [
+        -19.1,
+        13.6
+      ],
+      "size": [
+        3.8000000000000007,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_craft_top_wall_e",
+      "center": [
+        -11.5,
+        13.6
+      ],
+      "size": [
+        4.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_craft_bath_wall_s",
+      "center": [
+        -8.4,
+        5.8
+      ],
+      "size": [
+        0.28,
+        3.5999999999999996
+      ]
+    },
+    {
+      "name": "villa_craft_bath_wall_n",
+      "center": [
+        -8.4,
+        12.0
+      ],
+      "size": [
+        0.28,
+        3.1999999999999993
+      ]
+    },
+    {
+      "name": "villa_bath_bottom_wall",
+      "center": [
+        -6.0,
+        4.0
+      ],
+      "size": [
+        4.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_bath_top_wall",
+      "center": [
+        -6.0,
+        12.2
+      ],
+      "size": [
+        4.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_cloak_elder_wall_w",
+      "center": [
+        -18.6,
+        -3.2
+      ],
+      "size": [
+        4.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_cloak_elder_wall_e",
+      "center": [
+        -8.1,
+        -3.2
+      ],
+      "size": [
+        9.0,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_cloak_right_wall_s",
+      "center": [
+        -11.2,
+        -1.9500000000000002
+      ],
+      "size": [
+        0.28,
+        2.5
+      ]
+    },
+    {
+      "name": "villa_cloak_right_wall_n",
+      "center": [
+        -11.2,
+        2.9
+      ],
+      "size": [
+        0.28,
+        2.2
+      ]
+    },
+    {
+      "name": "villa_elder_bed_bottom_w",
+      "center": [
+        -10.95,
+        -15.2
+      ],
+      "size": [
+        2.5,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_elder_bed_bottom_e",
+      "center": [
+        -4.8,
+        -15.2
+      ],
+      "size": [
+        2.4,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_elder_bed_top_w",
+      "center": [
+        -9.7,
+        -3.2
+      ],
+      "size": [
+        2.5999999999999996,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_elder_bed_top_e",
+      "center": [
+        -4.7,
+        -3.2
+      ],
+      "size": [
+        2.1999999999999997,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_elder_bath_right_wall_s",
+      "center": [
+        -11.2,
+        -13.75
+      ],
+      "size": [
+        0.28,
+        2.8999999999999986
+      ]
+    },
+    {
+      "name": "villa_elder_bath_right_wall_n",
+      "center": [
+        -11.2,
+        -6.300000000000001
+      ],
+      "size": [
+        0.28,
+        6.2
+      ]
+    },
+    {
+      "name": "villa_balcony_top_w",
+      "center": [
+        -10.7,
+        -16.8
+      ],
+      "size": [
+        3.0,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_balcony_top_e",
+      "center": [
+        -5.0,
+        -16.8
+      ],
+      "size": [
+        2.8000000000000003,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_balcony_left_wall",
+      "center": [
+        -12.2,
+        -19.15
+      ],
+      "size": [
+        0.28,
+        4.699999999999999
+      ]
+    },
+    {
+      "name": "villa_balcony_right_wall",
+      "center": [
+        -3.6,
+        -19.15
+      ],
+      "size": [
+        0.28,
+        4.699999999999999
+      ]
+    },
+    {
+      "name": "villa_living_top_w",
+      "center": [
+        6.0,
+        3.8
+      ],
+      "size": [
+        2.4000000000000004,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_living_top_e",
+      "center": [
+        17.6,
+        3.8
+      ],
+      "size": [
+        6.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_living_left_wall_s",
+      "center": [
+        4.8,
+        -14.6
+      ],
+      "size": [
+        0.28,
+        4.800000000000001
+      ]
+    },
+    {
+      "name": "villa_living_left_wall_n",
+      "center": [
+        4.8,
+        -1.8000000000000003
+      ],
+      "size": [
+        0.28,
+        11.2
+      ]
+    },
+    {
+      "name": "villa_foyer_top_w",
+      "center": [
+        11.6,
+        -17.0
+      ],
+      "size": [
+        2.8000000000000007,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_foyer_top_e",
+      "center": [
+        18.7,
+        -17.0
+      ],
+      "size": [
+        4.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "villa_foyer_left_wall",
+      "center": [
+        10.2,
+        -20.5
+      ],
+      "size": [
+        0.28,
+        7.0
+      ]
+    },
+    {
+      "name": "villa_kitchen_counter",
+      "center": [
+        12.6,
+        18.2
+      ],
+      "size": [
+        6.4,
+        2.8
+      ]
+    },
+    {
+      "name": "villa_kitchen_island",
+      "center": [
+        12.6,
+        15.0
+      ],
+      "size": [
+        3.2,
+        1.4
+      ]
+    },
+    {
+      "name": "villa_washer",
+      "center": [
+        -18.0,
+        20.0
+      ],
+      "size": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "name": "villa_laundry_sink",
+      "center": [
+        -14.6,
+        20.0
+      ],
+      "size": [
+        2.8,
+        1.0
+      ]
+    },
+    {
+      "name": "villa_dining_table",
+      "center": [
+        10.6,
+        7.2
+      ],
+      "size": [
+        4.2,
+        2.8
+      ]
+    },
+    {
+      "name": "villa_stairs_block",
+      "center": [
+        2.8,
+        4.8
+      ],
+      "size": [
+        1.35,
+        8.8
+      ]
+    },
+    {
+      "name": "villa_living_sofa",
+      "center": [
+        13.2,
+        -12.5
+      ],
+      "size": [
+        5.6,
+        1.8
+      ]
+    },
+    {
+      "name": "villa_living_table",
+      "center": [
+        13.2,
+        -9.3
+      ],
+      "size": [
+        2.9,
+        1.7
+      ]
+    },
+    {
+      "name": "villa_tv_console",
+      "center": [
+        12.4,
+        -3.2
+      ],
+      "size": [
+        5.4,
+        0.9
+      ]
+    },
+    {
+      "name": "villa_elder_bed",
+      "center": [
+        -7.2,
+        -9.6
+      ],
+      "size": [
+        4.8,
+        5.2
+      ]
+    },
+    {
+      "name": "villa_elder_closet",
+      "center": [
+        -14.5,
+        -5.8
+      ],
+      "size": [
+        1.1,
+        4.4
+      ]
+    },
+    {
+      "name": "villa_craft_table",
+      "center": [
+        -15.4,
+        9.2
+      ],
+      "size": [
+        3.8,
+        2.3
+      ]
+    },
+    {
+      "name": "villa_cloak_storage",
+      "center": [
+        -17.4,
+        0.2
+      ],
+      "size": [
+        1.2,
+        5.3
+      ]
+    },
+    {
+      "name": "villa_bath_toilet",
+      "center": [
+        -5.2,
+        10.2
+      ],
+      "size": [
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "name": "villa_bath_sink",
+      "center": [
+        -6.6,
+        7.0
+      ],
+      "size": [
+        1.8,
+        0.9
+      ]
+    },
+    {
+      "name": "villa_elder_shower",
+      "center": [
+        -18.0,
+        -10.8
+      ],
+      "size": [
+        2.4,
+        2.4
+      ]
+    },
+    {
+      "name": "villa_elder_toilet",
+      "center": [
+        -17.6,
+        -13.8
+      ],
+      "size": [
+        1.5,
+        1.9
+      ]
+    },
+    {
+      "name": "villa_elder_sink",
+      "center": [
+        -14.3,
+        -13.8
+      ],
+      "size": [
+        2.0,
+        1.2
+      ]
+    },
+    {
+      "name": "villa_balcony_chair",
+      "center": [
+        -9.7,
+        -18.9
+      ],
+      "size": [
+        1.4,
+        1.4
+      ]
+    },
+    {
+      "name": "villa_foyer_console",
+      "center": [
+        18.2,
+        -20.6
+      ],
+      "size": [
+        2.8,
+        1.0
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      15.0,
+      -20.5
+    ],
+    [
+      16.8,
+      -12.4
+    ],
+    [
+      15.4,
+      -9.5
+    ],
+    [
+      13.8,
+      7.0
+    ],
+    [
+      17.0,
+      15.0
+    ],
+    [
+      -16.0,
+      16.0
+    ],
+    [
+      -12.0,
+      11.4
+    ],
+    [
+      -7.0,
+      10.2
+    ],
+    [
+      -14.2,
+      0.4
+    ],
+    [
+      -5.3,
+      -5.0
+    ],
+    [
+      -4.8,
+      -6.4
+    ],
+    [
+      -14.2,
+      -11.2
+    ],
+    [
+      -8.5,
+      -18.5
+    ],
+    [
+      -0.2,
+      4.6
+    ]
+  ],
+  "x_bounds": [
+    -21.0,
+    21.0
+  ],
+  "y_bounds": [
+    -24.0,
+    24.0
+  ],
+  "world_path": "generated_worlds/semantic_3d/reference_villa_ground.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

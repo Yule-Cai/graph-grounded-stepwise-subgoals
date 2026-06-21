@@ -1,0 +1,591 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="office_suite">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="office_suite_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>26.400 58.400 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 30.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -30.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>28.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>14.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 60.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_north_wall_left">
+      <static>true</static>
+      <pose>-3.000 15.000 0.625 0 0 0</pose>
+      <link name="office_north_wall_left_link">
+        <collision name="office_north_wall_left_collision">
+          <geometry>
+            <box><size>13.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_north_wall_left_visual">
+          <geometry>
+            <box><size>13.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_north_wall_right">
+      <static>true</static>
+      <pose>6.000 15.000 0.625 0 0 0</pose>
+      <link name="office_north_wall_right_link">
+        <collision name="office_north_wall_right_collision">
+          <geometry>
+            <box><size>8.000 0.280 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_north_wall_right_visual">
+          <geometry>
+            <box><size>8.000 0.280 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_server_wall">
+      <static>true</static>
+      <pose>4.800 21.000 0.625 0 0 0</pose>
+      <link name="office_server_wall_link">
+        <collision name="office_server_wall_collision">
+          <geometry>
+            <box><size>0.280 11.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_server_wall_visual">
+          <geometry>
+            <box><size>0.280 11.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_meeting_wall">
+      <static>true</static>
+      <pose>-4.000 21.000 0.625 0 0 0</pose>
+      <link name="office_meeting_wall_link">
+        <collision name="office_meeting_wall_collision">
+          <geometry>
+            <box><size>0.280 11.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_meeting_wall_visual">
+          <geometry>
+            <box><size>0.280 11.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__7_5__14">
+      <static>true</static>
+      <pose>-7.500 -14.000 0.275 0 0 0</pose>
+      <link name="office_desk__7_5__14_link">
+        <collision name="office_desk__7_5__14_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__7_5__14_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__7_5__8">
+      <static>true</static>
+      <pose>-7.500 -8.000 0.275 0 0 0</pose>
+      <link name="office_desk__7_5__8_link">
+        <collision name="office_desk__7_5__8_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__7_5__8_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__7_5__2">
+      <static>true</static>
+      <pose>-7.500 -2.000 0.275 0 0 0</pose>
+      <link name="office_desk__7_5__2_link">
+        <collision name="office_desk__7_5__2_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__7_5__2_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__7_5_4">
+      <static>true</static>
+      <pose>-7.500 4.000 0.275 0 0 0</pose>
+      <link name="office_desk__7_5_4_link">
+        <collision name="office_desk__7_5_4_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__7_5_4_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__7_5_10">
+      <static>true</static>
+      <pose>-7.500 10.000 0.275 0 0 0</pose>
+      <link name="office_desk__7_5_10_link">
+        <collision name="office_desk__7_5_10_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__7_5_10_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__3_5__14">
+      <static>true</static>
+      <pose>-3.500 -14.000 0.275 0 0 0</pose>
+      <link name="office_desk__3_5__14_link">
+        <collision name="office_desk__3_5__14_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__3_5__14_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__3_5__8">
+      <static>true</static>
+      <pose>-3.500 -8.000 0.275 0 0 0</pose>
+      <link name="office_desk__3_5__8_link">
+        <collision name="office_desk__3_5__8_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__3_5__8_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__3_5__2">
+      <static>true</static>
+      <pose>-3.500 -2.000 0.275 0 0 0</pose>
+      <link name="office_desk__3_5__2_link">
+        <collision name="office_desk__3_5__2_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__3_5__2_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__3_5_4">
+      <static>true</static>
+      <pose>-3.500 4.000 0.275 0 0 0</pose>
+      <link name="office_desk__3_5_4_link">
+        <collision name="office_desk__3_5_4_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__3_5_4_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk__3_5_10">
+      <static>true</static>
+      <pose>-3.500 10.000 0.275 0 0 0</pose>
+      <link name="office_desk__3_5_10_link">
+        <collision name="office_desk__3_5_10_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk__3_5_10_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_3_5__14">
+      <static>true</static>
+      <pose>3.500 -14.000 0.275 0 0 0</pose>
+      <link name="office_desk_3_5__14_link">
+        <collision name="office_desk_3_5__14_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_3_5__14_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_3_5__8">
+      <static>true</static>
+      <pose>3.500 -8.000 0.275 0 0 0</pose>
+      <link name="office_desk_3_5__8_link">
+        <collision name="office_desk_3_5__8_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_3_5__8_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_3_5__2">
+      <static>true</static>
+      <pose>3.500 -2.000 0.275 0 0 0</pose>
+      <link name="office_desk_3_5__2_link">
+        <collision name="office_desk_3_5__2_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_3_5__2_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_3_5_4">
+      <static>true</static>
+      <pose>3.500 4.000 0.275 0 0 0</pose>
+      <link name="office_desk_3_5_4_link">
+        <collision name="office_desk_3_5_4_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_3_5_4_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_3_5_10">
+      <static>true</static>
+      <pose>3.500 10.000 0.275 0 0 0</pose>
+      <link name="office_desk_3_5_10_link">
+        <collision name="office_desk_3_5_10_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_3_5_10_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_7_5__14">
+      <static>true</static>
+      <pose>7.500 -14.000 0.275 0 0 0</pose>
+      <link name="office_desk_7_5__14_link">
+        <collision name="office_desk_7_5__14_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_7_5__14_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_7_5__8">
+      <static>true</static>
+      <pose>7.500 -8.000 0.275 0 0 0</pose>
+      <link name="office_desk_7_5__8_link">
+        <collision name="office_desk_7_5__8_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_7_5__8_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_7_5__2">
+      <static>true</static>
+      <pose>7.500 -2.000 0.275 0 0 0</pose>
+      <link name="office_desk_7_5__2_link">
+        <collision name="office_desk_7_5__2_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_7_5__2_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_7_5_4">
+      <static>true</static>
+      <pose>7.500 4.000 0.275 0 0 0</pose>
+      <link name="office_desk_7_5_4_link">
+        <collision name="office_desk_7_5_4_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_7_5_4_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_desk_7_5_10">
+      <static>true</static>
+      <pose>7.500 10.000 0.275 0 0 0</pose>
+      <link name="office_desk_7_5_10_link">
+        <collision name="office_desk_7_5_10_collision">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_desk_7_5_10_visual">
+          <geometry>
+            <box><size>2.400 1.600 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_meeting_table">
+      <static>true</static>
+      <pose>-8.500 21.000 0.275 0 0 0</pose>
+      <link name="office_meeting_table_link">
+        <collision name="office_meeting_table_collision">
+          <geometry>
+            <box><size>4.800 2.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_meeting_table_visual">
+          <geometry>
+            <box><size>4.800 2.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_server_rack_a">
+      <static>true</static>
+      <pose>8.800 18.500 0.550 0 0 0</pose>
+      <link name="office_server_rack_a_link">
+        <collision name="office_server_rack_a_collision">
+          <geometry>
+            <box><size>1.200 4.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_server_rack_a_visual">
+          <geometry>
+            <box><size>1.200 4.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_server_rack_b">
+      <static>true</static>
+      <pose>10.600 22.500 0.550 0 0 0</pose>
+      <link name="office_server_rack_b_link">
+        <collision name="office_server_rack_b_collision">
+          <geometry>
+            <box><size>1.200 4.000 1.100</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_server_rack_b_visual">
+          <geometry>
+            <box><size>1.200 4.000 1.100</size></box>
+          </geometry>
+          <material><ambient>0.33 0.38 0.40 1</ambient><diffuse>0.33 0.38 0.40 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_reception_counter">
+      <static>true</static>
+      <pose>0.000 24.000 0.275 0 0 0</pose>
+      <link name="office_reception_counter_link">
+        <collision name="office_reception_counter_collision">
+          <geometry>
+            <box><size>5.000 1.000 0.550</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_reception_counter_visual">
+          <geometry>
+            <box><size>5.000 1.000 0.550</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="office_printer_island">
+      <static>true</static>
+      <pose>-10.000 -4.000 0.375 0 0 0</pose>
+      <link name="office_printer_island_link">
+        <collision name="office_printer_island_collision">
+          <geometry>
+            <box><size>1.800 1.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="office_printer_island_visual">
+          <geometry>
+            <box><size>1.800 1.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,251 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="tb3_world">
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.78 0.84 0.88 1</background>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="tb3_world_floor">
+      <static>true</static>
+      <pose>0.000 0.000 -0.025 0 0 0</pose>
+      <link name="floor_link">
+        <collision name="floor_collision">
+          <geometry>
+            <box><size>30.000 30.000 0.050</size></box>
+          </geometry>
+        </collision>
+        <visual name="floor_visual">
+          <geometry>
+            <box><size>30.000 30.000 0.050</size></box>
+          </geometry>
+          <material><ambient>0.88 0.92 0.88 1</ambient><diffuse>0.88 0.92 0.88 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_north">
+      <static>true</static>
+      <pose>0.000 15.000 0.625 0 0 0</pose>
+      <link name="outer_north_link">
+        <collision name="outer_north_collision">
+          <geometry>
+            <box><size>30.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_north_visual">
+          <geometry>
+            <box><size>30.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_south">
+      <static>true</static>
+      <pose>0.000 -15.000 0.625 0 0 0</pose>
+      <link name="outer_south_link">
+        <collision name="outer_south_collision">
+          <geometry>
+            <box><size>30.000 0.350 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_south_visual">
+          <geometry>
+            <box><size>30.000 0.350 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_west">
+      <static>true</static>
+      <pose>-15.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_west_link">
+        <collision name="outer_west_collision">
+          <geometry>
+            <box><size>0.350 30.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_west_visual">
+          <geometry>
+            <box><size>0.350 30.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="outer_east">
+      <static>true</static>
+      <pose>15.000 0.000 0.625 0 0 0</pose>
+      <link name="outer_east_link">
+        <collision name="outer_east_collision">
+          <geometry>
+            <box><size>0.350 30.000 1.250</size></box>
+          </geometry>
+        </collision>
+        <visual name="outer_east_visual">
+          <geometry>
+            <box><size>0.350 30.000 1.250</size></box>
+          </geometry>
+          <material><ambient>0.27 0.32 0.34 1</ambient><diffuse>0.27 0.32 0.34 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_one_one">
+      <static>true</static>
+      <pose>-8.800 -8.800 0.375 0 0 0</pose>
+      <link name="symbol_one_one_link">
+        <collision name="symbol_one_one_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_one_one_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_one_two">
+      <static>true</static>
+      <pose>-8.800 0.000 0.375 0 0 0</pose>
+      <link name="symbol_one_two_link">
+        <collision name="symbol_one_two_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_one_two_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_one_three">
+      <static>true</static>
+      <pose>-8.800 8.800 0.375 0 0 0</pose>
+      <link name="symbol_one_three_link">
+        <collision name="symbol_one_three_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_one_three_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_two_one">
+      <static>true</static>
+      <pose>0.000 -8.800 0.375 0 0 0</pose>
+      <link name="symbol_two_one_link">
+        <collision name="symbol_two_one_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_two_one_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_two_two">
+      <static>true</static>
+      <pose>0.000 0.000 0.375 0 0 0</pose>
+      <link name="symbol_two_two_link">
+        <collision name="symbol_two_two_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_two_two_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_two_three">
+      <static>true</static>
+      <pose>0.000 8.800 0.375 0 0 0</pose>
+      <link name="symbol_two_three_link">
+        <collision name="symbol_two_three_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_two_three_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_three_one">
+      <static>true</static>
+      <pose>8.800 -8.800 0.375 0 0 0</pose>
+      <link name="symbol_three_one_link">
+        <collision name="symbol_three_one_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_three_one_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_three_two">
+      <static>true</static>
+      <pose>8.800 0.000 0.375 0 0 0</pose>
+      <link name="symbol_three_two_link">
+        <collision name="symbol_three_two_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_three_two_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="symbol_three_three">
+      <static>true</static>
+      <pose>8.800 8.800 0.375 0 0 0</pose>
+      <link name="symbol_three_three_link">
+        <collision name="symbol_three_three_collision">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+        </collision>
+        <visual name="symbol_three_three_visual">
+          <geometry>
+            <box><size>2.400 2.400 0.750</size></box>
+          </geometry>
+          <material><ambient>0.42 0.48 0.50 1</ambient><diffuse>0.42 0.48 0.50 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

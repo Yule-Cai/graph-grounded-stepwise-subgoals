@@ -1,0 +1,673 @@
+{
+  "map_id": "reference_family_flat",
+  "label": "reference Chinese family flat with living room, dining room, kitchen, bathroom, bedrooms, study and entrance hall",
+  "spawn": [
+    8.5,
+    -18.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        20.0
+      ],
+      "size": [
+        52.0,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -20.0
+      ],
+      "size": [
+        52.0,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -26.0,
+        0
+      ],
+      "size": [
+        0.35,
+        40.0
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        26.0,
+        0
+      ],
+      "size": [
+        0.35,
+        40.0
+      ]
+    },
+    {
+      "name": "ref_left_wing_inner_wall_s",
+      "center": [
+        -14.5,
+        -11.6
+      ],
+      "size": [
+        0.28,
+        16.8
+      ]
+    },
+    {
+      "name": "ref_left_wing_inner_wall_m",
+      "center": [
+        -14.5,
+        4.75
+      ],
+      "size": [
+        0.28,
+        5.5
+      ]
+    },
+    {
+      "name": "ref_left_wing_inner_wall_n",
+      "center": [
+        -14.5,
+        16.0
+      ],
+      "size": [
+        0.28,
+        8.0
+      ]
+    },
+    {
+      "name": "ref_kitchen_bath_wall",
+      "center": [
+        -20.25,
+        7.5
+      ],
+      "size": [
+        11.5,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_bath_guest_wall_w",
+      "center": [
+        -22.1,
+        -3.2
+      ],
+      "size": [
+        7.800000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_bath_guest_wall_e",
+      "center": [
+        -15.15,
+        -3.2
+      ],
+      "size": [
+        1.3000000000000007,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_dining_study_wall",
+      "center": [
+        -2.6,
+        13.75
+      ],
+      "size": [
+        0.28,
+        12.5
+      ]
+    },
+    {
+      "name": "ref_study_second_bed_wall",
+      "center": [
+        10.8,
+        13.75
+      ],
+      "size": [
+        0.28,
+        12.5
+      ]
+    },
+    {
+      "name": "ref_study_bottom_wall_w",
+      "center": [
+        -0.7000000000000001,
+        7.5
+      ],
+      "size": [
+        3.8,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_study_bottom_wall_e",
+      "center": [
+        7.800000000000001,
+        7.5
+      ],
+      "size": [
+        6.000000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_second_bed_bottom_wall_w",
+      "center": [
+        12.3,
+        7.5
+      ],
+      "size": [
+        3.0,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_second_bed_bottom_wall_e",
+      "center": [
+        21.2,
+        7.5
+      ],
+      "size": [
+        9.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_closet_top_wall",
+      "center": [
+        21.2,
+        7.5
+      ],
+      "size": [
+        9.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_closet_master_wall",
+      "center": [
+        21.2,
+        -2.8
+      ],
+      "size": [
+        9.600000000000001,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_closet_living_wall_s",
+      "center": [
+        16.4,
+        -1.2999999999999998
+      ],
+      "size": [
+        0.28,
+        3.0
+      ]
+    },
+    {
+      "name": "ref_closet_living_wall_n",
+      "center": [
+        16.4,
+        5.35
+      ],
+      "size": [
+        0.28,
+        4.3
+      ]
+    },
+    {
+      "name": "ref_entry_left_wall_s",
+      "center": [
+        5.0,
+        -14.5
+      ],
+      "size": [
+        0.28,
+        11.0
+      ]
+    },
+    {
+      "name": "ref_entry_left_wall_n",
+      "center": [
+        5.0,
+        -3.4
+      ],
+      "size": [
+        0.28,
+        4.3999999999999995
+      ]
+    },
+    {
+      "name": "ref_entry_right_wall_s",
+      "center": [
+        14.5,
+        -16.0
+      ],
+      "size": [
+        0.28,
+        8.0
+      ]
+    },
+    {
+      "name": "ref_entry_right_wall_n",
+      "center": [
+        14.5,
+        -5.3
+      ],
+      "size": [
+        0.28,
+        5.0
+      ]
+    },
+    {
+      "name": "ref_entry_top_wall_w",
+      "center": [
+        6.5,
+        -5.6
+      ],
+      "size": [
+        3.0,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_entry_top_wall_e",
+      "center": [
+        12.75,
+        -5.6
+      ],
+      "size": [
+        3.5,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_balcony_top_wall_w",
+      "center": [
+        -10.45,
+        -15.0
+      ],
+      "size": [
+        4.1,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_balcony_top_wall_e",
+      "center": [
+        -3.2,
+        -15.0
+      ],
+      "size": [
+        3.1999999999999997,
+        0.28
+      ]
+    },
+    {
+      "name": "ref_balcony_left_wall",
+      "center": [
+        -12.5,
+        -17.5
+      ],
+      "size": [
+        0.28,
+        5.0
+      ]
+    },
+    {
+      "name": "ref_balcony_right_wall",
+      "center": [
+        -1.6,
+        -17.5
+      ],
+      "size": [
+        0.28,
+        5.0
+      ]
+    },
+    {
+      "name": "ref_living_entry_pier_n",
+      "center": [
+        5.0,
+        3.95
+      ],
+      "size": [
+        0.28,
+        7.1
+      ]
+    },
+    {
+      "name": "ref_living_entry_pier_s",
+      "center": [
+        5.0,
+        -4.199999999999999
+      ],
+      "size": [
+        0.28,
+        2.8
+      ]
+    },
+    {
+      "name": "ref_kitchen_counter",
+      "center": [
+        -23.2,
+        15.7
+      ],
+      "size": [
+        4.5,
+        3.0
+      ]
+    },
+    {
+      "name": "ref_bath_shower",
+      "center": [
+        -18.5,
+        3.5
+      ],
+      "size": [
+        2.5,
+        2.5
+      ]
+    },
+    {
+      "name": "ref_bath_toilet",
+      "center": [
+        -24.0,
+        2.6
+      ],
+      "size": [
+        1.5,
+        1.8
+      ]
+    },
+    {
+      "name": "ref_bath_sink",
+      "center": [
+        -22.5,
+        -0.8
+      ],
+      "size": [
+        2.6,
+        1.2
+      ]
+    },
+    {
+      "name": "ref_bath_vanity",
+      "center": [
+        -18.0,
+        -0.7
+      ],
+      "size": [
+        2.1,
+        1.0
+      ]
+    },
+    {
+      "name": "ref_guest_bed",
+      "center": [
+        -23.1,
+        -12.5
+      ],
+      "size": [
+        4.4,
+        5.6
+      ]
+    },
+    {
+      "name": "ref_guest_desk",
+      "center": [
+        -18.0,
+        -5.2
+      ],
+      "size": [
+        4.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ref_dining_table",
+      "center": [
+        -8.2,
+        13.5
+      ],
+      "size": [
+        4.5,
+        3.2
+      ]
+    },
+    {
+      "name": "ref_study_desk",
+      "center": [
+        7.2,
+        15.0
+      ],
+      "size": [
+        2.8,
+        2.0
+      ]
+    },
+    {
+      "name": "ref_study_bookshelf",
+      "center": [
+        0.6,
+        15.2
+      ],
+      "size": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "ref_second_bed",
+      "center": [
+        22.5,
+        14.0
+      ],
+      "size": [
+        5.2,
+        4.8
+      ]
+    },
+    {
+      "name": "ref_closet_storage",
+      "center": [
+        21.0,
+        2.4
+      ],
+      "size": [
+        4.5,
+        1.2
+      ]
+    },
+    {
+      "name": "ref_master_bed",
+      "center": [
+        22.5,
+        -8.8
+      ],
+      "size": [
+        5.0,
+        4.8
+      ]
+    },
+    {
+      "name": "ref_master_cabinet",
+      "center": [
+        20.0,
+        -15.6
+      ],
+      "size": [
+        5.2,
+        1.1
+      ]
+    },
+    {
+      "name": "ref_living_sofa",
+      "center": [
+        -2.5,
+        -4.2
+      ],
+      "size": [
+        4.8,
+        1.5
+      ]
+    },
+    {
+      "name": "ref_living_sofa_e",
+      "center": [
+        2.8,
+        -6.4
+      ],
+      "size": [
+        1.7,
+        4.5
+      ]
+    },
+    {
+      "name": "ref_living_chair_w",
+      "center": [
+        -6.3,
+        -7.0
+      ],
+      "size": [
+        2.0,
+        1.7
+      ]
+    },
+    {
+      "name": "ref_living_chair_e",
+      "center": [
+        1.4,
+        -9.6
+      ],
+      "size": [
+        2.0,
+        1.7
+      ]
+    },
+    {
+      "name": "ref_living_table",
+      "center": [
+        -2.5,
+        -8.2
+      ],
+      "size": [
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "name": "ref_balcony_chair_w",
+      "center": [
+        -9.8,
+        -17.5
+      ],
+      "size": [
+        1.5,
+        1.2
+      ]
+    },
+    {
+      "name": "ref_balcony_chair_e",
+      "center": [
+        -4.2,
+        -17.5
+      ],
+      "size": [
+        1.5,
+        1.2
+      ]
+    },
+    {
+      "name": "ref_balcony_table",
+      "center": [
+        -7.0,
+        -17.8
+      ],
+      "size": [
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "name": "ref_entry_cabinet",
+      "center": [
+        12.8,
+        -10.4
+      ],
+      "size": [
+        1.0,
+        5.2
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      -18.0,
+      14.0
+    ],
+    [
+      -21.5,
+      3.5
+    ],
+    [
+      -19.0,
+      -8.0
+    ],
+    [
+      -8.5,
+      10.0
+    ],
+    [
+      3.5,
+      14.0
+    ],
+    [
+      17.0,
+      12.0
+    ],
+    [
+      19.0,
+      5.0
+    ],
+    [
+      18.0,
+      -7.5
+    ],
+    [
+      8.5,
+      -15.5
+    ],
+    [
+      -2.5,
+      -6.0
+    ],
+    [
+      -7.0,
+      -18.9
+    ]
+  ],
+  "x_bounds": [
+    -26.0,
+    26.0
+  ],
+  "y_bounds": [
+    -20.0,
+    20.0
+  ],
+  "world_path": "generated_worlds/semantic_3d/reference_family_flat.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

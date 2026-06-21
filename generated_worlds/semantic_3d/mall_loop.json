@@ -1,0 +1,235 @@
+{
+  "map_id": "mall_loop",
+  "label": "loop mall",
+  "spawn": [
+    0.0,
+    -26.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "mall_atrium_block",
+      "center": [
+        0,
+        0
+      ],
+      "size": [
+        6.8,
+        19.0
+      ]
+    },
+    {
+      "name": "mall_shop_wall_w1",
+      "center": [
+        -5.4,
+        -18
+      ],
+      "size": [
+        0.28,
+        10
+      ]
+    },
+    {
+      "name": "mall_shop_wall_w2",
+      "center": [
+        -5.4,
+        18
+      ],
+      "size": [
+        0.28,
+        10
+      ]
+    },
+    {
+      "name": "mall_shop_wall_e1",
+      "center": [
+        5.4,
+        -18
+      ],
+      "size": [
+        0.28,
+        10
+      ]
+    },
+    {
+      "name": "mall_shop_wall_e2",
+      "center": [
+        5.4,
+        18
+      ],
+      "size": [
+        0.28,
+        10
+      ]
+    },
+    {
+      "name": "mall_bridge_s",
+      "center": [
+        0,
+        -11.8
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "mall_bridge_n",
+      "center": [
+        0,
+        11.8
+      ],
+      "size": [
+        8.0,
+        0.28
+      ]
+    },
+    {
+      "name": "mall_kiosk_1",
+      "center": [
+        -9.0,
+        -5.0
+      ],
+      "size": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "name": "mall_kiosk_2",
+      "center": [
+        9.0,
+        5.0
+      ],
+      "size": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "name": "mall_food_table_a",
+      "center": [
+        9.0,
+        -20.0
+      ],
+      "size": [
+        2.0,
+        1.4
+      ]
+    },
+    {
+      "name": "mall_food_table_b",
+      "center": [
+        9.0,
+        -15.5
+      ],
+      "size": [
+        2.0,
+        1.4
+      ]
+    },
+    {
+      "name": "mall_jewelry_counter",
+      "center": [
+        -9.0,
+        18.0
+      ],
+      "size": [
+        3.5,
+        1.2
+      ]
+    },
+    {
+      "name": "mall_kids_play_block",
+      "center": [
+        9.0,
+        18.0
+      ],
+      "size": [
+        2.4,
+        2.4
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      0,
+      25
+    ],
+    [
+      8.8,
+      -18
+    ],
+    [
+      7.2,
+      17.9
+    ],
+    [
+      -8.8,
+      19.3
+    ],
+    [
+      -4.4,
+      -0.2
+    ],
+    [
+      0,
+      -26
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/mall_loop.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}

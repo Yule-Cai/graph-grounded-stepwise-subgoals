@@ -1,0 +1,6 @@
+gymnasium
+numpy
+openai
+stable-baselines3
+tensorboard
+llama-cpp-python

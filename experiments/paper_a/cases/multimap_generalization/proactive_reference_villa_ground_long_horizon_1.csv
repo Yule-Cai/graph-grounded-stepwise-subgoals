@@ -1,0 +1,2 @@
+case_id,scenario,map_id,start_x,start_y,goal_x,goal_y,yaw,euclidean_distance,candidate_count,straight_line_safe,difficulty_tag,route_constraint,risk_center_x,risk_center_y,risk_radius
+reference_villa_ground_long_horizon_000,long_horizon,reference_villa_ground,-7.000,10.200,-14.200,-11.200,1.5368,22.579,12,0,long_horizon_topological,Decompose the long-horizon route into stable intermediate waypoints.,-10.220,-0.628,2.600

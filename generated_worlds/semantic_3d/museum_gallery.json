@@ -1,0 +1,198 @@
+{
+  "map_id": "museum_gallery",
+  "label": "museum gallery",
+  "spawn": [
+    0.0,
+    -26.0,
+    1.5707963267948966
+  ],
+  "obstacles": [
+    {
+      "name": "outer_north",
+      "center": [
+        0,
+        30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_south",
+      "center": [
+        0,
+        -30.0
+      ],
+      "size": [
+        28,
+        0.35
+      ]
+    },
+    {
+      "name": "outer_west",
+      "center": [
+        -14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "outer_east",
+      "center": [
+        14.0,
+        0
+      ],
+      "size": [
+        0.35,
+        60
+      ]
+    },
+    {
+      "name": "museum_partition_left",
+      "center": [
+        -4.2,
+        -3
+      ],
+      "size": [
+        0.28,
+        18
+      ]
+    },
+    {
+      "name": "museum_partition_right",
+      "center": [
+        5.4,
+        5
+      ],
+      "size": [
+        0.28,
+        16
+      ]
+    },
+    {
+      "name": "museum_vault_wall",
+      "center": [
+        6.2,
+        20
+      ],
+      "size": [
+        0.28,
+        10
+      ]
+    },
+    {
+      "name": "museum_case_1",
+      "center": [
+        -2.5,
+        5
+      ],
+      "size": [
+        3.0,
+        2.0
+      ]
+    },
+    {
+      "name": "museum_case_2",
+      "center": [
+        3.5,
+        -10
+      ],
+      "size": [
+        3.2,
+        2.0
+      ]
+    },
+    {
+      "name": "museum_case_3",
+      "center": [
+        -8.5,
+        13
+      ],
+      "size": [
+        2.2,
+        2.2
+      ]
+    },
+    {
+      "name": "museum_case_4",
+      "center": [
+        0.5,
+        17
+      ],
+      "size": [
+        3.4,
+        2.0
+      ]
+    },
+    {
+      "name": "museum_case_5",
+      "center": [
+        -8.5,
+        -12.0
+      ],
+      "size": [
+        2.4,
+        2.4
+      ]
+    },
+    {
+      "name": "museum_case_6",
+      "center": [
+        8.0,
+        -2.0
+      ],
+      "size": [
+        2.4,
+        2.4
+      ]
+    },
+    {
+      "name": "museum_ticket_counter",
+      "center": [
+        0.0,
+        -25.0
+      ],
+      "size": [
+        4.0,
+        1.0
+      ]
+    }
+  ],
+  "goal_points": [
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      -8.6,
+      11.3
+    ],
+    [
+      9.5,
+      20
+    ],
+    [
+      -5.0,
+      5.0
+    ]
+  ],
+  "x_bounds": [
+    -13.2,
+    13.2
+  ],
+  "y_bounds": [
+    -29.2,
+    29.2
+  ],
+  "world_path": "generated_worlds/semantic_3d/museum_gallery.world",
+  "source": "gazebo_3d_projection",
+  "note": "Collision geometry is stored in the SDF world; goals/spawn/bounds are sidecar metadata."
+}
